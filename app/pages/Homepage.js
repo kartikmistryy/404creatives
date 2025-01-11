@@ -10,8 +10,8 @@ const Homepage = () => {
   })
 
   return (
-    <div className='h-screen w-full'>
-      <video className='object-fill w-full h-full' autoPlay loop muted src={`${isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}`}></video>
+    <div className='w-full'>
+      <video className='md:aspect-video aspect-auto w-full h-auto' autoPlay loop muted playsInline controls={false} src={`${isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}`}></video>
     </div>
   )
 }

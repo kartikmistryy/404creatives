@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <div className='w-full h-[10vh] bg-gray-00 md:px-10 px-5 flex items-center justify-start absolute top-0 right-0 z-10'>
+    <div className='w-full h-[10vh] md:px-10 px-5 flex items-center justify-start absolute top-0 right-0 z-10'>
         <div style={{ transition: 'all ease 0.4s', display: showMenu ? 'flex': 'none'}} className={`absolute top-0 right-0 w-full h-[100vh] flex flex-col bg-[#f2f2f2] text-[#252222] items-end justify-start md:px-10 px-5 md:py-10 py-5 gap-10 ${!showMenu ? 'translate-x-[100vw] flex': 'translate-x-0'} z-[99]`}>
           <button  onClick={() => {
             setShowMenu((prev) => !prev)
