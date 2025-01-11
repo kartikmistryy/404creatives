@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <div className='w-full h-[10vh] bg-gray-00 md:px-10 px-5 flex items-center justify-between absolute top-0 right-0 z-10'>
+    <div className='w-full h-[10vh] bg-gray-00 md:px-10 px-5 flex items-center justify-start absolute top-0 right-0 z-10'>
         <div style={{ transition: 'all ease 0.4s', display: showMenu ? 'flex': 'none'}} className={`absolute top-0 right-0 w-full h-[100vh] flex flex-col bg-[#f2f2f2] text-[#252222] items-end justify-start md:px-10 px-5 md:py-10 py-5 gap-10 ${!showMenu ? 'translate-x-[100vw] flex': 'translate-x-0'} z-[99]`}>
           <button  onClick={() => {
             setShowMenu((prev) => !prev)
@@ -44,22 +44,22 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <h1 className={`font-black text-3xl ${dancingScript.className}`}>404</h1>
+        <h1 className={`font-black text-3xl w-fit ${dancingScript.className}`}>404</h1>
 
-        <ul className={`${unbounded.className} flex flex-row justify-between gap-32 w-[50vw] md:text-[1.6vw] text-2xl font-medium mr-auto ml-[10vw] ${isResponsive ? 'hidden': 'flex'}`}>
+        <ul className={`${unbounded.className} lg:flex hidden flex-row justify-between md:gap-32 gap-10 w-fit md:text-[1.6vw] text-2xl font-medium ml-[10vw] }`}>
             <li><a  href="#">Graphic Design</a></li>
             <li><a href="#">Illustration</a></li>
             <li><a href="#">About</a></li>
         </ul>
 
-        <span className='flex items-center justify-between w-fit md:gap-10 gap-5'>
+        <span className='flex items-center justify-between w-fit md:gap-10 gap-0 ml-auto'>
             <button 
             className={`${unbounded.className} font-mono flex items-center justify-center py-[3px] px-[30px] rounded-3xl border-2 border-gray-600 font-medium md:text-[1.6vw] text-2xl ${isResponsive ? 'scale-75': 'scale-100'}`}>Shop</button>
             <button 
             onClick={() => {
               setShowMenu((prev) => !prev)
             }}
-            className='text-4xl'><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg></button>
+            className='md:text-4xl text-3xl p-0 m-0'><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg></button>
         </span>
     </div>
   )

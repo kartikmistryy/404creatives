@@ -11,7 +11,7 @@ const Homepage = () => {
 
   return (
     <div className='h-screen w-full'>
-      <video className='object-cover w-full h-full' autoPlay loop muted src={`${isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}`}></video>
+      <video className='object-fill w-full h-full' autoPlay loop muted src={`${isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}`}></video>
     </div>
   )
 }
