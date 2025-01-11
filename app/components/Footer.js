@@ -20,10 +20,10 @@ const Footer = () => {
 
         <div className='w-full h-fit flex flex-col md:gap-8 gap-2'>
             <h2 className='font-normal text-xl text-gray-100'>Follow us</h2>
-            <span className='flex flex-row md:gap-4 gap-6'>
-                <FaInstagram className='text-2xl cursor-pointer'/>
-                <FaLinkedin className='text-2xl cursor-pointer'/>
-                <FaTwitter className='text-2xl cursor-pointer'/>
+            <span className='flex flex-row gap-6'>
+                <Link href='https://www.instagram.com/404creative.co.in'><FaInstagram className='text-2xl cursor-pointer'/></Link>
+                <Link href='https://www.linkedin.com/company/404-creatives/'><FaLinkedin className='text-2xl cursor-pointer'/></Link>
+                <Link href='https://www.threads.net/@404creative.co.in'><FaTwitter className='text-2xl cursor-pointer'/></Link>
             </span>
         </div>
 
