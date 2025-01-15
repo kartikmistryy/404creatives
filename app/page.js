@@ -4,7 +4,7 @@ import Homepage from "./pages/Homepage";
   
 export default function App() {
   return (
-    <div className="w-full h-full flex flex-col justify-between min-h-[100vh]">
+    <div className="w-full h-full flex flex-col justify-between">
       <Navbar/>
       <Homepage/>
       <Footer/>
