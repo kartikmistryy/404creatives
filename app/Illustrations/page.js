@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {
     Carousel,
@@ -33,8 +34,8 @@ const Illustrations = () => {
     <span className="flex md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[100px] min-h-[100px] min-w-[150px] bg-blue-300 rounded-xl">
       <Image src="file.svg" height={300} width={300} alt="img" />
     </span>
-    <span className="flex md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[100px] min-h-[100px] min-w-[150px] bg-blue-300 rounded-xl">
-      <Image src="file.svg" height={300} width={300} alt="img" />
+    <span className="flex md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[80px] min-h-[100px] min-w-[150px] bg-blue-300 rounded-xl">
+      <Image src="file.svg" height={300} width={300} alt="img" className='md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[80px] min-h-[100px] min-w-[150px]'/>
     </span>
     <span className="flex md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[100px] min-h-[100px] min-w-[150px] bg-blue-300 rounded-xl">
       <Image src="file.svg" height={300} width={300} alt="img" />
