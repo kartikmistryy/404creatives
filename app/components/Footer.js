@@ -1,10 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
 import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import { Chivo } from 'next/font/google';
+
+
+const chivo = Chivo({
+  subsets: ['latin'], // Add subsets as needed
+  weight: ['400'], // Specify weights (e.g., '400', '700') based on your needs
+});
 
 const Footer = () => {
   return (
-    <div className='bg-[#1e1e1e] w-full h-full md:px-10 px-5 py-20 text-[#f2f2f2] flex md:flex-row flex-col justify-between md:gap-0 gap-10'>
+    <div className={`${chivo.className} bg-[#1e1e1e] w-full h-full md:px-10 px-5 py-20 text-[#f2f2f2] flex md:flex-row flex-col justify-between md:gap-0 gap-10`}>
         <div className='w-full h-fit flex flex-col md:gap-8 gap-2'>
             <h2 className='font-normal text-xl text-gray-100'>Need help?</h2>
             <Link className='font-medium underline underline-offset-2 text-gray-300 cursor-pointer' href="#">Contact us</Link>

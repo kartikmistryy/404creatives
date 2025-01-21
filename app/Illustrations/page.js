@@ -9,9 +9,17 @@ import {
   } from "@/components/ui/carousel"
 import Image from 'next/image'
 
+import { Chivo } from 'next/font/google';
+
+
+const chivo = Chivo({
+  subsets: ['latin'], // Add subsets as needed
+  weight: ['400'], // Specify weights (e.g., '400', '700') based on your needs
+});
+
 const Illustrations = () => {
   return (
-    <div className='flex flex-col items-start justify-start h-full md:mt-[10vh] mt-16 w-full'>
+    <div className={`${chivo.className} flex flex-col items-start justify-start h-full md:mt-[10vh] mt-16 w-full`}>
         <div className='w-full h-full flex md:min-h-[80vh] min-h-auto justify-start items-start m-0 mt-5 md:m-0 p-0 overflow-hidden'>
             <Carousel className="p-0 relative h-full w-full flex m-0 scale-x-105 ">
                 <CarouselContent className="p-0 h-full w-full m-0 -ml-1.5">
