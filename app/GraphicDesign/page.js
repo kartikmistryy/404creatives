@@ -22,11 +22,15 @@ const GraphicDesign = () => {
   return (
     <div className={`${chivo.className} mt-16`}>
         <main className='md:px-10 px-5 py-20'>
-            <h1 className='md:text-[7vw] h-full leading-[100%] text-3xl font-extralight'>GRAPHIC DESIGN <br /><i className='font-serif font-light'>Portfolio</i></h1>
+            <h1 className='md:text-[7vw] h-full leading-[100%] text-3xl font-extralight'>GRAPHIC DESIGN <br /><i className='font-lovelace'>Portfolio</i></h1>
 
             <span className='flex items-center justify-between w-fit md:gap-10 gap-4 md:mt-20 mt-10'>
                 <p className='md:text-4xl text-xl'>BRANDING</p>
-                <button className='border-2 border-black md:px-20 px-8 md:py-3 py-1.5 rounded-full'><BsArrowRight/></button>
+                <button className='rounded-full'>
+                    <Image 
+                    className='md:w-36 w-20 h-full'
+                    src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
+                </button>
             </span>
 
             <p className='md:w-2/5 w-full md:mt-10 mt-4 font-normal md:text-base text-sm'>We are a team of creative experts from Mumbai, India, having years of experience in the field of Graphic Design.</p>
@@ -94,7 +98,11 @@ const GraphicDesign = () => {
             <div className='flex flex-col md:w-[80%] w-full'>
                 <span className='flex md:flex-col flex-row gap-4'>
                     <h2 className='md:text-4xl text-xl font-medium'>EMAIL DESIGN</h2>
-                    <button className='border-2 border-black md:px-20 px-8 md:py-3 py-1.5 rounded-full md:mt-10 m-0 w-fit hover:bg-black hover:text-white transition-all hover:scale-x-110'><BsArrowRight/></button>
+                    <button className='rounded-full'>
+                        <Image 
+                        className='md:w-36 w-20 h-full'
+                        src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
+                    </button>
                 </span>
                 <div className='flex flex-col mt-10'>
                     <span className='flex flex-row items-center justify-start gap-2 '>
@@ -108,9 +116,13 @@ const GraphicDesign = () => {
 
         <div className='md:px-10 px-5 my-10'>
             <div className='flex flex-col md:w-[80%] w-full'>
-                <span className='w-full h-20 flex flex-row items-center md:gap-20 gap-4'>
+                <span className='w-full h-20 flex flex-row items-center md:gap-16 gap-4'>
                     <h2 className='md:text-4xl text-xl font-medium'>PRINT DESIGN</h2>
-                    <button className='border-2 border-black md:px-20 px-8 md:py-3 py-1.5 rounded-full m-0 w-fit'><BsArrowRight/></button>
+                    <button className='rounded-full'>
+                    <Image 
+                    className='md:w-36 w-20 h-full'
+                    src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
+                </button>
                 </span>
                 <p className='md:w-[70%] w-full mt-2 font-normal'>We are a team of creative experts from Mumbai, India, having years of experience in the field of Graphic Design.</p>
             </div>

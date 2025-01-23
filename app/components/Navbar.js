@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { Poppins, Dancing_Script, Unbounded, Chivo } from 'next/font/google'
 import {AiOutlineClose} from 'react-icons/ai'
+import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -27,16 +28,16 @@ const Navbar = () => {
 
   return (
     <div className={`${chivo.className}  w-full h-20 flex absolute top-0 right-0 z-10`}>
-          <div style={{ transition: "all ease 0.3s"}} className={`absolute top-0 right-0 w-full h-[100vh] flex flex-col bg-[#f2f2f2] text-[#252222] items-end justify-start md:px-10 px-5 md:py-10 py-5 gap-10 z-[99] origin-right ${showMenu ? "scale-x-100" : "scale-x-0"} `}>
+          <div style={{ transition: "all ease 0.3s"}} className={`absolute top-0 right-0 w-full h-[100vh] flex flex-col bg-[#f2f2f2] text-[#252222] items-end justify-start md:px-12 px-5 md:py-8 py-5 gap-10  origin-bottom ${showMenu ? "opacity-100 translate-y-0 z-[99] pointer-events-auto" : "opacity-0 translate-y-10 z- pointer-events-none"} `}>
                 <button  onClick={() => {
                   setShowMenu((prev) => !prev)
                 }}>
                   <AiOutlineClose className='scale-150'/>
                 </button>
                 <ul className={`flex flex-col gap-5 items-end ${chivo.className}`}>
-                  <li className='font-medium md:text-[1.6vw] text-2xl'><a href="#">Home</a></li>
-                  <li className='font-medium md:text-[1.6vw] text-2xl'><a href="#">About</a></li>
-                  <li className='font-medium md:text-[1.6vw] text-2xl'><a href="#">Contact us</a></li>
+                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">Home</a></li>
+                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">About</a></li>
+                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">Contact us</a></li>
                 </ul>
           </div>
 
@@ -61,13 +62,15 @@ const Navbar = () => {
                       onClick={() => {
                         setShowMenu((prev) => !prev)
                       }}
-                      className='md:text-4xl text-xl p-0 m-0'><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg></button>
+                      className='text-3xl cursor-pointer'>
+                        <HiOutlineMenuAlt4/>
+                      </button>
                   </span>
                 </div>      
             </div>
             <div>
               <ul className='lg:hidden flex flex-row justify-center gap-8 w-[100vw] text-[0.7rem] font-medium mx-auto px-8'>
-                        <li><a  href="#">Graphic Design</a></li>
+                        <li><a  href="/GraphicDesign">Graphic Design</a></li>
                         <li><a href="/Illustrations">Illustration</a></li>
                         <li className='md:flex hidden'><a href="#">About</a></li>
                         <li className='flex md:hidden'><a href="#">Shop</a></li>
