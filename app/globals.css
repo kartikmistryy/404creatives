@@ -14,3 +14,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.carousel {
+  pointer-events: none; /* Disable any interaction */
+}
+
+.carousel-button {
+  pointer-events: auto; /* Enable buttons */
+}
