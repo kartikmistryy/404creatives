@@ -56,8 +56,8 @@ const Navbar = () => {
                   </ul>
 
                   <span className='flex items-center justify-between md:w-[200px] w-fit md:gap-10 gap-0'>
-                      <button 
-                      className='font-mono md:flex hidden items-center justify-center md:py-[3px] py-[5px] md:px-[40px] px-[30px] rounded-3xl border-2 border-[#252222] font-medium md:text-[1.1vw] text-lg md:scale-100 scale-75'>SHOP</button>
+                      <Link href='/Shop' 
+                      className='font-mono md:flex hidden items-center justify-center md:py-[3px] py-[5px] md:px-[40px] px-[30px] rounded-3xl border-2 border-[#252222] font-medium md:text-[1.1vw] text-lg md:scale-100 scale-75'>SHOP</Link>
                       <button 
                       onClick={() => {
                         setShowMenu((prev) => !prev)
@@ -73,7 +73,7 @@ const Navbar = () => {
                         <li><a  href="/GraphicDesign">Graphic Design</a></li>
                         <li><a href="/Illustrations">Illustration</a></li>
                         <li className='md:flex hidden'><a href="#">About</a></li>
-                        <li className='flex md:hidden'><a href="#">Shop</a></li>
+                        <li className='flex md:hidden'><a href="/Shop">Shop</a></li>
                     </ul>
               </div>
           </div>
