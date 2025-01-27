@@ -50,23 +50,23 @@ const Illustrations = () => {
   );
 
   return (
-    <div className={`${chivo.className} flex flex-col items-start justify-start h-full md:mt-[10vh] mt-16 w-full`}>
-      <div className="w-full h-full flex md:min-h-[80vh] min-h-auto justify-start items-start m-0 mt-5 md:m-0 p-0 overflow-hidden relative">
-        <div className="relative w-full h-full overflow-hidden">
+    <div className={`${chivo.className} flex flex-col items-start justify-start h-auto md:mt-[10vh] mt-20 w-full`}>
+      <div className="w-full h-auto flex min-h-auto justify-start items-start m-0 mt-5 md:m-0 p-0 overflow-hidden relative">
+        <div className="relative w-full h-auto bg-red-200 overflow-hidden">
           <div 
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out bg-green-200 h-fit"
             style={{
               transform: `translateX(-${slide}%)`,
             }}
           >
             {[...Array(TOTAL_IMAGES)].map((_, i) => (
-              <div key={i} className="w-full flex-shrink-0">
+              <div key={i} className="w-full h-auto flex-shrink-0">
                 <Image
                   src={`/photos/${i + 1}.png`}
                   width={2000}
                   height={2000}
                   alt={`Image ${i + 1}`}
-                  className="w-full min-h-full object-cover lg:aspect-auto aspect-square"
+                  className="w-full min-h-[200px] h-fit object-contain lg:aspect-auto aspect-square"
                 />
               </div>
             ))}
@@ -91,20 +91,20 @@ const Illustrations = () => {
       </div>
 
       <div className="md:py-6 gap-10 w-full">
-        <div className="flex w-full h-full flex-row gap-5 overflow-x-scroll md:px-10 px-5 scrollbar-hide py-5 md:p-0">
+        <div className="flex w-full md:w-4/5 h-full flex-row gap-3 overflow-x-scroll px-5 scrollbar-hide py-5 md:p-0 mx-auto">
           {subPreviewImages.map((imgIndex) => (
             <span
               key={imgIndex}
-              className="relative flex md:max-w-[340px] max-w-[150px] md:max-h-[180px] max-h-[100px] min-h-[100px] min-w-[150px] bg-blue-300 rounded-xl cursor-pointer"
+              className="relative flex md:max-w-[240px] max-w-[150px] md:max-h-[150px] max-h-[120px] min-h-[90px] min-w-[130px] rounded-[5px] cursor-pointer"
               onClick={() => handleSubPreviewClick(imgIndex)}
             >
-              <span className={`absolute bg-black ${currentIndex == imgIndex ? "opacity-0": "opacity-45"} z-[11] w-full h-full rounded-xl`}></span>
+              <span className={`absolute bg-black ${currentIndex == imgIndex ? "opacity-0": "opacity-45"} z-[11] w-full h-full rounded-[5px]`}></span>
               <Image
                 src={`/photos/${imgIndex + 1}.png`}
                 height={300}
                 width={300}
                 alt={`Thumbnail ${imgIndex + 1}`}
-                className="w-full h-full object-cover rounded-xl z-[10]"
+                className="w-full h-full object-cover rounded-[5px] z-[10]"
               />
             </span>
           ))}

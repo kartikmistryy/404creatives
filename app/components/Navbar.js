@@ -17,7 +17,8 @@ const dancingScript = Dancing_Script({
   weight: ['400', '700'], // Add the weights you plan to use
 });
 
-const Navbar = () => {
+const Navbar = ({ linkTitles, links }) => {
+  console.log(linkTitles, links)
 
   const [showMenu, setShowMenu] = useState(false)
   const [isResponsive, setIsResponsive] = useState(false)
@@ -35,9 +36,17 @@ const Navbar = () => {
                   <AiOutlineClose className='scale-150'/>
                 </button>
                 <ul className={`flex flex-col gap-5 items-end ${chivo.className}`}>
-                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">Home</a></li>
                   <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">About</a></li>
                   <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">Contact us</a></li>
+                  {
+                    linkTitles &&  (
+                      linkTitles.map((title, index) => {
+                        return (
+                          <li key={index} className='font-normal md:text-[1.6vw] text-2xl'><a href={`/${links[index]}`}>{title}</a></li>
+                        )
+                      })
+                    )
+                  }
                 </ul>
           </div>
 
