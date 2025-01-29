@@ -52,7 +52,7 @@ const Navbar = ({ linkTitles, links }) => {
 
 
           <div className='w-full h-fit'>
-            <div className='w-full md:h-[10vh] h-16 md:px-10 px-5 flex items-center justify-start '>
+            <div className='w-full md:h-[10vh] h-16 md:px-10 px-5 flex items-center justify-start'>
                 <div className='w-full md:h-[10vh] h-16 flex items-center justify-between'>
                   <Link href='/' className='font-black w-fit flex items-center justify-start md:w-[200px]'>
                     <Image width={100} height={100} src='/Logo/404.png'  alt='logo' className='md:w-14 md:h-14 w-10 h-10 md:mb-4 mb-2'/>
