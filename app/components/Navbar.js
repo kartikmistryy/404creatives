@@ -61,7 +61,7 @@ const Navbar = ({ linkTitles, links }) => {
                   <ul className="lg:flex hidden flex-row items-center justify-evenly md:gap-24 gap-10 w-fit md:text-[1.1vw] text-xl font-medium ml-[-5vw]">
                       <li><a  href="/GraphicDesign">Graphic Design</a></li>
                       <li><a href="/Illustrations">Illustration</a></li>
-                      <li><a href="#">About</a></li>
+                      <li><a href="/About">About</a></li>
                   </ul>
 
                   <span className='flex items-center justify-between md:w-[200px] w-fit md:gap-10 gap-0'>
@@ -81,7 +81,7 @@ const Navbar = ({ linkTitles, links }) => {
               <ul className='lg:hidden flex flex-row justify-center gap-8 w-[100vw] text-[0.7rem] font-medium mx-auto px-8'>
                         <li><a  href="/GraphicDesign">Graphic Design</a></li>
                         <li><a href="/Illustrations">Illustration</a></li>
-                        <li className='md:flex hidden'><a href="#">About</a></li>
+                        <li className='md:flex hidden'><a href="/About">About</a></li>
                         <li className='flex md:hidden'><a href="/Shop">Shop</a></li>
                     </ul>
               </div>

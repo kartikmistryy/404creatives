@@ -15,10 +15,19 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .carousel {
   pointer-events: none; /* Disable any interaction */
 }
 
 .carousel-button {
   pointer-events: auto; /* Enable buttons */
+}
+
+img, video {
+  pointer-events: none;
+  user-select: none;
 }

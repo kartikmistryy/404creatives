@@ -42,7 +42,12 @@ const GraphicDesign = () => {
         <div className='p-4'>
             <Carousel className="flex flex-col relative pb-12">
                 <CarouselContent>
-                    <CarouselItem className="md:basis-1/4 basis-full">
+                    <CarouselItem className="md:basis-1/4 basis-full relative">
+                        {/* <motion.span 
+                        initial={{ scaleY: "100%"}}
+                        whileInView={{ scaleY: "0"}}
+                        transition={{ duration: 0.4}}
+                        className='min-w-full min-h-full absolute top-0 left-0 bg-white origin-top'></motion.span> */}
                         <Image className='md:w-[400px] md:h-[370px] h-[370px] w-full rounded-xl object-fill' src="/Branding/1.png" alt='img' width={500} height={500}/>
                     </CarouselItem>
                     <CarouselItem className="md:basis-1/4 basis-full">
@@ -155,13 +160,13 @@ const GraphicDesign = () => {
                 <p className='md:w-[55%] w-full mt-2 font-normal'>Get a website that's as unique as your brand. We create sleek, responsive designs that captivate and convert-on any device. <br/> Let's build something great together. </p>
             </div>
 
-            <div className='relative md:flex md:flex-row grid grid-cols-3 items-end justify-between my-10 min-h-[400px] max-w-[60%] mx-auto'>
+            <div className='relative md:flex hidden md:flex-row grid grid-cols-3 items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-hidden'>
                 <motion.img
                 initial={{ translateX: -30 }}
                 whileInView={{ translateX: 0 }}
                 transition={{ duration: 1 }} 
                 src='/Webdes/tablet.png' className='md:w-[180px] md:h-[280px] w-[350px] h-[250px] col-span-1 mt-auto z-20'/>
-                <img
+                <Image width={600} height={600}
                 src='/Webdes/desktop.png' className='md:w-[500px] md:h-full w-[350px] h-[250px] col-span-1 absolute left-1/2 translate-x-[-50%] z-0'/>
                 <motion.img
                 initial={{ translateX: 30 }}
@@ -170,9 +175,12 @@ const GraphicDesign = () => {
                 src='/Webdes/laptop.png' className='md:w-[300px] md:h-full w-[350px] h-[250px] col-span-1 z-20'/>
                 <motion.img
                 initial={{ translateX: 30 }}
-                whileInView={{ translateX: 0 }}
+                whileInView={{ translateX: -50 }}
                 transition={{ duration: 1 }} 
                 src='/Webdes/phone.png' className='md:w-[80px] md:h-[150px] w-[150px] h-[100px] col-span-1 z-20'/>
+            </div>
+            <div className='md:hidden flex my-10'>
+                <Image alt='webdes-img' src='/mockup_webdes.png' width={300} height={300} className='object-contain flex w-full h-full'/>
             </div>
         </div>
 
