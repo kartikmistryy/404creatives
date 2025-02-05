@@ -160,7 +160,7 @@ const GraphicDesign = () => {
                 <p className='md:w-[55%] w-full mt-2 font-normal'>Get a website that's as unique as your brand. We create sleek, responsive designs that captivate and convert-on any device. <br/> Let's build something great together. </p>
             </div>
 
-            <div className='relative md:flex hidden md:flex-row grid grid-cols-3 items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-hidden'>
+            <div id='webdes' className='relative md:flex hidden md:flex-row grid grid-cols-3 items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-hidden'>
                 <motion.img
                 initial={{ translateX: -30 }}
                 whileInView={{ translateX: 0 }}
