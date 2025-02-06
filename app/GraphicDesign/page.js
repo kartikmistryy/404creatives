@@ -42,25 +42,20 @@ const GraphicDesign = () => {
         <div className='p-4'>
             <Carousel className="flex flex-col relative pb-12">
                 <CarouselContent>
-                    <CarouselItem className="md:basis-1/4 basis-full relative">
-                        {/* <motion.span 
-                        initial={{ scaleY: "100%"}}
-                        whileInView={{ scaleY: "0"}}
-                        transition={{ duration: 0.4}}
-                        className='min-w-full min-h-full absolute top-0 left-0 bg-white origin-top'></motion.span> */}
-                        <Image className='md:w-[400px] md:h-[370px] h-[370px] w-full rounded-xl object-fill' src="/Branding/1.png" alt='img' width={500} height={500}/>
+                    <CarouselItem className="lg:basis-1/4 md:basis-1/3 basis-full relative">
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/1.png" alt='img' width={500} height={500}/>
                     </CarouselItem>
-                    <CarouselItem className="md:basis-1/4 basis-full">
-                        <Image className='md:w-[400px] md:h-[370px] h-[370px] w-full rounded-xl object-fill' src="/Branding/2.png" alt='img' width={500} height={500}/>
+                    <CarouselItem className="lg:basis-1/4 md:basis-1/3 basis-full">
+                        <Image className='md:w-[400px] lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/2.png" alt='img' width={500} height={500}/>
                     </CarouselItem>
-                    <CarouselItem className="md:basis-1/4 basis-full">
+                    <CarouselItem className="lg:basis-1/4 md:basis-1/3 lg:h-[410px] h-[370px] basis-full">
                         <div className='flex flex-col gap-2'>
-                            <Image className='md:w-[400px] w-full h-[180px] rounded-xl object-fill' src="/Branding/3.png" alt='img' width={500} height={500}/>
-                            <Image className='w-[500px] h-[180px] rounded-xl object-fill' src="/Branding/4.png" alt='img' width={500} height={500}/>
+                            <Image className='md:w-full w-full lg:h-[260px] h-[240px] rounded-[5px] object-center' src="/Branding/3.png" alt='img' width={500} height={500}/>
+                            <Image className='w-[500px] lg:h-[145px] h-[120px] rounded-[5px] object-cover' src="/Branding/4.png" alt='img' width={500} height={500}/>
                         </div>
                     </CarouselItem>
-                    <CarouselItem className="md:basis-2/5 basis-full">
-                        <Image className='md:w-[400px] md:h-[370px] h-[370px] w-full rounded-xl object-fill' src="/Branding/5.png" alt='img' width={500} height={500}/>
+                    <CarouselItem className="lg:basis-2/5 md:basis-2/3 basis-full">
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/5.png" alt='img' width={500} height={500}/>
                     </CarouselItem>
                 </CarouselContent>
                 <span className='absolute bottom-0 right-0 flex flex-row justify-start items-center w-[100px] bg-red-300 mb-5'>
@@ -72,49 +67,49 @@ const GraphicDesign = () => {
         <div className='flex md:flex-row flex-col-reverse gap-10 w-full md:px-10 px-5 py-10 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-4 w-full relative'>
                 <span className='w-full h-full basis-2/3 px-10'>
-                    <Image className='md:w-[500px] md:h-full w-[70%] mx-auto h-[300px]' src='/gd_newsletter.png' height={1000} width={1000} alt='img'/>
+                    <Image className='md:w-[500px] md:h-full w-[90%] rounded-[5px] mx-auto h-[300px] object-contain' src='/gd_newsletter.png' height={1000} width={1000} alt='img'/>
                 </span>
-                <span className='relative md:flex hidden md:flex-col grid grid-cols-2 md:gap-5 gap-2 h-full w-full basis-1/3'>
+                <span className='relative md:flex hidden md:flex-col grid-cols-2 md:gap-5 gap-2 h-full w-full basis-1/3'>
                     <motion.img 
                     initial={{ translateX: -50 }}
                     whileInView={{ translateX: 0 }}
-                    transition={{ duration: 2 }} className='md:w-[280px] md:h-auto w-full h-[200px] md:absolute top-0 right-4' src="/Newsletter/4.png" height={500} width={500} alt='img'/>
+                    transition={{ duration: 2 }} className='md:w-[280px] md:h-auto w-full h-[200px] md:absolute top-0 right-4 rounded-[5px]' src="/Newsletter/4.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateX: 100 }}
                     whileInView={{ translateX: 0 }}
                     transition={{ duration: 2 }}
-                    className='md:w-[280px] md:h-auto w-full h-[200px] md:absolute top-[30px]' src="/Newsletter/3.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto w-full h-[200px] rounded-[5px] md:absolute top-[30px]' src="/Newsletter/3.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateY: -30, translateX: 30 }}
                     whileInView={{ translateY: 0, translateX: 0 }}
                     transition={{ duration: 2 }}
-                    className='md:w-[280px] md:h-auto  w-full h-[200px] md:absolute top-[30%] right-10' src="/Newsletter/2.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto  w-full h-[200px] rounded-[5px] md:absolute top-[30%] right-10' src="/Newsletter/2.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateY: -30 }}
                     whileInView={{ translateY: 0 }}
                     transition={{ duration: 2 }}
-                    className='md:w-[280px] md:h-auto w-full h-[200px] md:absolute top-[50%] -right-2' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto w-full h-[200px] rounded-[5px] md:absolute top-[50%] -right-2' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
                 </span>
                 <span className='relative flex md:hidden flex-col items-center md:gap-5 gap-2 h-full w-full basis-1/3 pb-40'>
                     <motion.img 
                     initial={{ translateX: -50 }}
                     whileInView={{ translateX: 0 }}
-                    transition={{ duration: 1 }} className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] md:absolute top-0 right-[50%]' src="/Newsletter/4.png" height={500} width={500} alt='img'/>
+                    transition={{ duration: 1 }} className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] md:absolute top-0 right-[50%] rounded-[5px]' src="/Newsletter/4.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateX: 100 }}
                     whileInView={{ translateX: 50 }}
                     transition={{ duration: 2 }}
-                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[50px]' src="/Newsletter/3.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[50px] rounded-[5px]' src="/Newsletter/3.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateY: -30, translateX: 30 }}
                     whileInView={{ translateY: 0, translateX: 0 }}
                     transition={{ duration: 3 }}
-                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[30%] right-10' src="/Newsletter/2.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[30%] right-10 rounded-[5px]' src="/Newsletter/2.png" height={500} width={500} alt='img'/>
                     <motion.img 
                     initial={{ translateY: -30 }}
                     whileInView={{ translateY: 0 }}
                     transition={{ duration: 2 }}
-                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute -bottom-[8%] left-3' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute -bottom-[8%] left-3 rounded-[5px]' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
                 </span>
             </div>
             <div className='flex flex-col md:w-[80%] w-full mt-10'>
@@ -178,17 +173,17 @@ const GraphicDesign = () => {
                     src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
                 </button>
                 </span>
-                <p className='md:w-[55%] w-full mt-2 font-normal'>Get a website that's as unique as your brand. We create sleek, responsive designs that captivate and convert-on any device. <br/> Let's build something great together. </p>
+                <p className='md:w-[55%] w-full mt-2 font-normal'>Get a website that&apos;s as unique as your brand. We create sleek, responsive designs that captivate and convert-on any device. <br/> Let&apos;s build something great together. </p>
             </div>
 
-            <div id='webdes' className='relative md:flex hidden md:flex-row grid grid-cols-3 items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-hidden'>
+            <div id='webdes' className='relative md:flex hidden md:flex-row  items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-visible'>
                 <motion.img
                 initial={{ translateX: -30 }}
                 whileInView={{ translateX: 0 }}
                 transition={{ duration: 1 }} 
                 src='/Webdes/tablet.png' className='md:w-[180px] md:h-[280px] w-[350px] h-[250px] col-span-1 mt-auto z-20'/>
                 <Image width={600} height={600}
-                src='/Webdes/desktop.png' className='md:w-[500px] md:h-full w-[350px] h-[250px] col-span-1 absolute left-1/2 translate-x-[-50%] z-0'/>
+                src='/Webdes/desktop.png' alt='desktop-png' className='md:w-[500px] md:h-full w-[350px] h-[250px] col-span-1 absolute left-1/2 translate-x-[-50%] z-0'/>
                 <motion.img
                 initial={{ translateX: 30 }}
                 whileInView={{ translateX: 0 }}
@@ -215,16 +210,16 @@ const GraphicDesign = () => {
                     src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
                 </button>
                 </span>
-                <p className='md:w-[55%] w-full mt-2 font-normal'>No hidden charges-choose what you need, from custom designs to tailored packages. Download our rate card for full transparency and clear pricing for your brand's needs.</p>
+                <p className='md:w-[55%] w-full mt-2 font-normal'>No hidden charges-choose what you need, from custom designs to tailored packages. Download our rate card for full transparency and clear pricing for your brand&apos;s needs.</p>
             </div>
 
             <div className='flex md:flex-row flex-col justify-center gap-10 my-10'>
                <span className='flex flex-row items-end gap-4'>
-                    <img src='/contactus/1.png' alt='img' className='md:w-[35vw] w-[90%] h-full'/>
+                    <Image src='/contactus/1.png' width={500} height={500} alt='img' className='md:w-[35vw] w-[90%] h-full'/>
                     <BsDownload className='text-xl'/>
                </span>
                <span className='flex flex-row items-end gap-4'>
-                <img src='/contactus/2.png' alt='img' className='md:w-[35vw] w-[90%] h-full'/>
+                <Image src='/contactus/2.png' width={500} height={500} alt='img' className='md:w-[35vw] w-[90%] h-full'/>
                 <BsDownload className='text-xl'/>
                </span>
             </div>

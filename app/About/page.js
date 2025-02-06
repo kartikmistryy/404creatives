@@ -23,8 +23,8 @@ const About = () => {
                     <p className='text-sm font-medium'>Neha is a visual artist, known for her minimalistic style.</p>
                     <Link href="#" className='w-full flex items-center mt-auto text-md underline gap-2 font-medium'>LinkedIn <AiOutlinePlus/></Link>
                   </span>
-                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-xl border-gray-200'>
-                    <Image className='w-full h-full rounded-xl object-cover min-h-[180px] max-h-[180px]' width={500} height={500} src="https://404creative.co.in/wp-content/uploads/2024/06/neha.png" alt="neha-pfp" />
+                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-[10px] border-gray-200'>
+                    <Image className='w-full h-full rounded-[5px] object-cover min-h-[180px] max-h-[180px]' width={500} height={500} src="/about/neha.png" alt="neha-pfp" />
                   </span>
                 </div>
 
@@ -35,8 +35,8 @@ const About = () => {
                     <p className='text-sm font-medium'>Kaushik is a concept and comic artist, known for his great art and realistic render.</p>
                     <Link href="#" className='w-full flex items-center mt-auto text-md underline gap-2 font-medium'>LinkedIn <AiOutlinePlus/></Link>
                   </span>
-                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-xl border-gray-200'>
-                    <Image className='w-full h-full rounded-xl object-cover min-h-[180px] max-h-[180px]' width={500} height={500} src="https://404creative.co.in/wp-content/uploads/2024/06/kaushik-1.png" alt="kaushik-pfp" />
+                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-[10px] border-gray-200'>
+                    <Image className='w-full h-full rounded-[5px] object-cover min-h-[180px] max-h-[180px]' width={500} height={500} src="/about/kaushik.png" alt="kaushik-pfp" />
                   </span>
                 </div>
               </div>
@@ -50,8 +50,8 @@ const About = () => {
                     <hr className='border-gray-600 my-2 w-1/2'/>
                     <p className='text-sm font-medium'>Babita makes sure that everyone is working!</p>
                   </span>
-                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-xl border-gray-200'>
-                    <Image className='w-full h-full rounded-xl object-cover' width={500} height={500} src="https://404creative.co.in/wp-content/uploads/2024/06/bbita.png" alt="babita-pfp" />
+                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-[10px] border-gray-200'>
+                    <Image className='w-full h-full rounded-[5px] object-cover' width={500} height={500} src="/about/babita.png" alt="babita-pfp" />
                   </span>
                 </div>
 
@@ -59,10 +59,10 @@ const About = () => {
                   <span className='w-full flex flex-col'>
                     <h1 className='lg:w-1/2 w-full text-base font-medium'>TIKKO</h1>
                     <hr className='border-gray-600 my-2 w-1/2'/>
-                    <p className='text-sm font-medium'>Tiko makes sure he's not working.</p>
+                    <p className='text-sm font-medium'>Tiko makes sure he&apos;s not working.</p>
                   </span>
-                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-xl border-gray-200'>
-                    <Image className='w-full h-full rounded-xl object-cover' width={500} height={500} src="https://404creative.co.in/wp-content/uploads/2024/06/tikko.png" alt="tikko-pfp" />
+                  <span className='w-full p-2 flex items-center justify-center border-[1px] rounded-[10px] border-gray-200'>
+                    <Image className='w-full h-full rounded-[5px] object-cover' width={500} height={500} src="/about/tikko.png" alt="tikko-pfp" />
                   </span>
                 </div>
               </div>
@@ -78,7 +78,6 @@ const About = () => {
             <button className='flex items-center justify-start gap-3 text-sm font-semibold text-white bg-black rounded-[5px] p-2'>
               <BsWhatsapp/>
               CONNECT ON WHATSAPP
-              {/* <ArrowRight/> */}
             </button>
           </div>
           <form action="" className='mt-10 flex md:flex-row flex-col lg:w-[90%] w-full h-full lg:gap-20 gap-4'>
