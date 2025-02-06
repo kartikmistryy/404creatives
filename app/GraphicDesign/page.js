@@ -74,7 +74,7 @@ const GraphicDesign = () => {
                 <span className='w-full h-full basis-2/3 px-10'>
                     <Image className='md:w-[500px] md:h-full w-[70%] mx-auto h-[300px]' src='/gd_newsletter.png' height={1000} width={1000} alt='img'/>
                 </span>
-                <span className='relative md:flex md:flex-col grid grid-cols-2 md:gap-5 gap-2 h-full w-full basis-1/3'>
+                <span className='relative md:flex hidden md:flex-col grid grid-cols-2 md:gap-5 gap-2 h-full w-full basis-1/3'>
                     <motion.img 
                     initial={{ translateX: -50 }}
                     whileInView={{ translateX: 0 }}
@@ -94,6 +94,27 @@ const GraphicDesign = () => {
                     whileInView={{ translateY: 0 }}
                     transition={{ duration: 2 }}
                     className='md:w-[280px] md:h-auto w-full h-[200px] md:absolute top-[50%] -right-2' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
+                </span>
+                <span className='relative flex md:hidden flex-col items-center md:gap-5 gap-2 h-full w-full basis-1/3 pb-40'>
+                    <motion.img 
+                    initial={{ translateX: -50 }}
+                    whileInView={{ translateX: 0 }}
+                    transition={{ duration: 1 }} className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] md:absolute top-0 right-[50%]' src="/Newsletter/4.png" height={500} width={500} alt='img'/>
+                    <motion.img 
+                    initial={{ translateX: 100 }}
+                    whileInView={{ translateX: 50 }}
+                    transition={{ duration: 2 }}
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[50px]' src="/Newsletter/3.png" height={500} width={500} alt='img'/>
+                    <motion.img 
+                    initial={{ translateY: -30, translateX: 30 }}
+                    whileInView={{ translateY: 0, translateX: 0 }}
+                    transition={{ duration: 3 }}
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[30%] right-10' src="/Newsletter/2.png" height={500} width={500} alt='img'/>
+                    <motion.img 
+                    initial={{ translateY: -30 }}
+                    whileInView={{ translateY: 0 }}
+                    transition={{ duration: 2 }}
+                    className='md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute -bottom-[8%] left-3' src="/Newsletter/1.png" height={500} width={500} alt='img'/>
                 </span>
             </div>
             <div className='flex flex-col md:w-[80%] w-full mt-10'>
