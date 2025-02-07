@@ -7,7 +7,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div className='mt-20 w-full h-full bg-gray-100'>
+    <div className='mt-24 w-full h-full bg-gray-100'>
         <main className='flex flex-col w-full h-full'>
           <div className='flex xl:flex-row flex-col justify-between items-center w-full h-full md:p-10 p-5 gap-10'>
             <div className='flex flex-col xl:w-[45%] w-full items-start justify-start'>

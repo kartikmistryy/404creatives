@@ -23,8 +23,8 @@ const chivo = Chivo({
 const GraphicDesign = () => {
 
   return (
-    <div className={`${chivo.className} mt-16`}>
-        <main className='md:px-10 px-5 pt-20 pb-10'>
+    <div className={`${chivo.className} mt-24`}>
+        <main className='md:px-10 px-5 pt-14 pb-10'>
             <h1 className='md:text-[7vw] h-full leading-[100%] text-3xl font-extralight'>GRAPHIC DESIGN <br /><i className='font-lovelace'>Portfolio</i></h1>
 
             <span className='flex items-center justify-between w-fit md:gap-10 gap-4 md:mt-20 mt-10'>
@@ -43,19 +43,19 @@ const GraphicDesign = () => {
             <Carousel className="flex flex-col relative pb-12">
                 <CarouselContent>
                     <CarouselItem className="lg:basis-1/4 md:basis-1/3 basis-full relative">
-                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/1.png" alt='img' width={500} height={500}/>
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/1.png" alt='img' width={1000} height={1000}/>
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/4 md:basis-1/3 basis-full">
-                        <Image className='md:w-[400px] lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/2.png" alt='img' width={500} height={500}/>
+                        <Image className='md:w-[400px] lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/2.png" alt='img' width={1000} height={1000}/>
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/4 md:basis-1/3 lg:h-[410px] h-[370px] basis-full">
                         <div className='flex flex-col gap-2'>
-                            <Image className='md:w-full w-full lg:h-[260px] h-[240px] rounded-[5px] object-center' src="/Branding/3.png" alt='img' width={500} height={500}/>
-                            <Image className='w-[500px] lg:h-[145px] h-[120px] rounded-[5px] object-cover' src="/Branding/4.png" alt='img' width={500} height={500}/>
+                            <Image className='w-full lg:h-[260px] h-[240px] rounded-[5px] object-center' src="/Branding/3.png" alt='img' width={1000} height={1000}/>
+                            <Image className='w-full lg:h-[145px] h-[120px] rounded-[5px] object-cover' src="/Branding/4.png" alt='img' width={1000} height={1000}/>
                         </div>
                     </CarouselItem>
-                    <CarouselItem className="lg:basis-2/5 md:basis-2/3 basis-full">
-                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/5.png" alt='img' width={500} height={500}/>
+                    <CarouselItem className="lg:basis-3/5 md:basis-2/3 basis-full">
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/5.png" alt='img' width={1000} height={1000}/>
                     </CarouselItem>
                 </CarouselContent>
                 <span className='absolute bottom-0 right-0 flex flex-row justify-start items-center w-[100px] bg-red-300 mb-5'>

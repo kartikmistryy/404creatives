@@ -78,7 +78,7 @@ const Navbar = ({ linkTitles, links }) => {
                 </div>      
             </div>
             <div>
-              <ul className='lg:hidden flex flex-row justify-center gap-8 w-[100vw] text-[0.7rem] font-medium mx-auto px-8'>
+              <ul className='lg:hidden flex flex-row justify-center gap-8 w-[100vw] text-[0.7rem] sm:text-[0.8rem] font-medium mx-auto px-8'>
                         <li><a  href="/GraphicDesign">Graphic Design</a></li>
                         <li><a href="/Illustrations">Illustration</a></li>
                         <li className='md:flex hidden'><a href="/About">About</a></li>

@@ -50,7 +50,7 @@ const Illustrations = () => {
   );
 
   return (
-    <div className={`${chivo.className} flex flex-col w-full md:mt-[12vh] mt-[10vh] lg:mt-[10vh] relative`}>
+    <div className={`${chivo.className} flex flex-col w-full md:mt-[12vh] mt-20 lg:mt-20 relative`}>
       <div className="w-full h-auto py-4">
         <div id="main" className="relative">
         <span className="flex justify-between w-full h-14 absolute top-1/2 md:px-10 px-1">
