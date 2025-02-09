@@ -122,8 +122,8 @@ const GraphicDesign = () => {
                     </button>
                 </span>
                 <div className='flex flex-col mt-10'>
-                    <span className='flex flex-row items-center justify-start gap-2 '>
-                        <Image className='h-8 w-8 rounded-full' src="https://images.pexels.com/photos/7915359/pexels-photo-7915359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={200} height={200} alt='img'/>
+                    <span className='flex flex-row items-center justify-start gap-0'>
+                        <Image className='h-12 w-12 rounded-full scale-125 -ml-3 -mr-1' src="/404pfp.png" width={300} height={300} alt='img'/>
                         <p className='text-md font-medium'>404CREATIVE.CO.IN</p>
                     </span>
                     <p className='md:w-[80%] w-full mt-2 font-normal'>Reach your audience with beutifully crafted emails - completely free to send. We design, you  connect. Simple, effective and impactful.</p>
@@ -179,14 +179,14 @@ const GraphicDesign = () => {
             <div id='webdes' className='relative md:flex hidden md:flex-row  items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-visible'>
                 <motion.img
                 initial={{ translateX: -30 }}
-                whileInView={{ translateX: 0 }}
+                whileInView={{ translateX: 10 }}
                 transition={{ duration: 1 }} 
-                src='/Webdes/tablet.png' className='md:w-[180px] md:h-[280px] w-[350px] h-[250px] col-span-1 mt-auto z-20'/>
+                src='/Webdes/tablet.png' className='md:w-[150px] md:h-[200px] w-[350px] h-[250px] col-span-1 mt-auto z-20'/>
                 <Image width={600} height={600}
                 src='/Webdes/desktop.png' alt='desktop-png' className='md:w-[500px] md:h-full w-[350px] h-[250px] col-span-1 absolute left-1/2 translate-x-[-50%] z-0'/>
                 <motion.img
-                initial={{ translateX: 30 }}
-                whileInView={{ translateX: 0 }}
+                initial={{ translateX: 70 }}
+                whileInView={{ translateX: 90 }}
                 transition={{ duration: 1 }} 
                 src='/Webdes/laptop.png' className='md:w-[300px] md:h-full w-[350px] h-[250px] col-span-1 z-20'/>
                 <motion.img

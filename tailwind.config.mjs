@@ -56,7 +56,8 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		fontFamily: {
-			lovelace: ['Lovelace', 'sans-serif'], // Custom font
+			lovelace: ['Lovelace', 'sans-serif'], 
+			vandoesburg: ['VanDoesburgArchiType', 'sans-serif'],
 		},
   	}
   },
