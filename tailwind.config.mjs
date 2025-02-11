@@ -57,7 +57,7 @@ export default {
   		},
 		fontFamily: {
 			lovelace: ['Lovelace', 'sans-serif'], 
-			vandoesburg: ['VanDoesburgArchiType', 'sans-serif'],
+			theovandoesburg: ['Theovandoesburg', 'sans-serif'],
 		},
   	}
   },
