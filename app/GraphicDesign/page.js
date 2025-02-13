@@ -13,6 +13,7 @@ import {
 import Image from 'next/image'
 
 import { Chivo } from 'next/font/google'
+import Link from 'next/link'
 
 const chivo = Chivo({
   subsets: ['latin'], // Add subsets as needed
@@ -29,11 +30,11 @@ const GraphicDesign = () => {
 
             <span className='flex items-center justify-between w-fit md:gap-10 gap-4 md:mt-20 mt-10'>
                 <p className='md:text-4xl text-xl'>BRANDING</p>
-                <button className='rounded-full'>
+                <Link href='/GraphicDesign/Branding' className='rounded-full'>
                     <Image 
                     className='md:w-36 w-20 h-full'
                     src="/rightArrow.png" alt='arrowIcon' width={200} height={200}/>
-                </button>
+                </Link>
             </span>
 
             <p className='md:w-2/5 w-full md:mt-10 mt-4 font-normal md:text-base text-sm'>Together, we bring your hand your brand to life. By blending your vision with our creativity, we craft vibrant identities that stand out and leave a lasting impact.</p>
