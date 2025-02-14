@@ -7,7 +7,7 @@ const Branding = () => {
         <div className='w-full md:h-[90vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black'>
             <div className='w-full h-full flex flex-col justify-between items-start  border-r-[1px] border-black'>
                 <main className='flex flex-col gap-2 md:px-10 px-5 md:pt-[14vh] pt-10 justify-center min-h-[350px]'>
-                    <h2 className='md:text-7xl text-[2rem]'>New</h2>
+                    <h2 className='md:text-[3.8vw] text-[2rem]'>New</h2>
                     <h1 className='md:text-[5rem] text-[3.2rem] leading-[100%] md font-medium'>NIRMALA <br /> CREATION</h1>
                     <h4 className='md:text-2xl text-xl md:w-2/3 w-full font-medium py-4'>BRANDING + PACKAGING + WEBSITE + EXTRAS</h4>
                 </main>
