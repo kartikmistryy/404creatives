@@ -37,8 +37,8 @@ export async function POST(req) {
     const { to, subject, html } = await req.json();  // Get email details from the request body
 
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Keep this as your Resend sender email
-      to: "404creative.co@gmail.com",
+      from: '404creative.co@gmail.com', // Keep this as your Resend sender email
+      to: "kartikmistry301@gmail.com",
       subject: "404 Website Reach Out",
       html,
     });
