@@ -38,7 +38,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev', // Keep this as your Resend sender email
-      to: "404creative.co@gmail.com",
+      to: "fragshotmanagement@gmail.com",
       subject: "404 Website Reach Out",
       html,
     });
