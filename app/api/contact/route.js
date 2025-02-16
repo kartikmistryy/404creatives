@@ -1,50 +1,26 @@
-// import nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer';
 
-// export async function POST(req) {
-//   try {
-//     const { name, email, phone, message } = await req.json();
-//     console.log(email)
-//     const transporter = nodemailer.createTransport({
-//       host: 'smtp.gmail.com',
-//       auth: {
-//         user: "kartikmistry301@gmail.com",
-//         pass: "ynzd zzpw dvkp lelu",
-//       },
-//       port: 587,
-//       secure: false
-//     });
-
-//     await transporter.sendMail({
-//       from: email,
-//       to: "kartikmistry301@gmail.com", // Your email
-//       subject: `New Contact Form Submission from ${name}`,
-//       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-//     });
-
-//     return new Response(JSON.stringify({ message: 'Message sent successfully!' }), { status: 200 });
-//   } catch (error) {
-//     return new Response(JSON.stringify({ message: 'Error sending email', error }), { status: 500 });
-//   }
-// }
-
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.API_KEY);  // Use environment variable for security
-
-export async function POST(req) {
-  console.log(process.env.RESEND_API_KEY)
+export async function POST(req) { 
   try {
-    const { to, subject, html } = await req.json();  // Get email details from the request body
+    const { to, subject, text } = await req.json();
 
-    const data = await resend.emails.send({
-      from: '404creative.co@gmail.com', // Keep this as your Resend sender email
-      to: "kartikmistry301@gmail.com",
-      subject: "404 Website Reach Out",
-      html,
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: '404creative.co@gmail.com',  // Use your Gmail
+        pass: process.env.GMAIL_APP_PASSWORD, // Use an App Password (not your regular password)
+      },
     });
 
-    return Response.json({ success: true, data });
+    await transporter.sendMail({
+      from: '404creative.co@gmail.com',
+      to,
+      subject,
+      text,
+    });
+
+    return new Response(JSON.stringify({ message: 'Email sent successfully!' }), { status: 200 });
   } catch (error) {
-    return Response.json({ success: false, error: error }, { status: 500 });
+    return new Response(JSON.stringify({ message: 'Error sending email', error }), { status: 500 });
   }
 }

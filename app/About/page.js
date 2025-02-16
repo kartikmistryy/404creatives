@@ -8,7 +8,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
 
 const About = () => {
-  const [response, setResponse] = useState(false)
+  const [response, setResponse] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,19 +27,20 @@ const About = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          to: formData.email,
-          subject: 'REACHING OUT',
-          html: `
-            <p>Name:${formData.name}</p>
-            <p>Email: ${formData.email}</p>
-            <p>Phone: ${formData.phone}</p>
-            <p>Email: ${formData.message}</p>
+          to: "kartikmistry301@gmail.com", // Set a fixed recipient email
+          subject: "REACHING OUT",
+          text: `
+            Name: ${formData.name}
+            Email: ${formData.email}
+            Phone: ${formData.phone}
+            Message: ${formData.message}
           `,
         }),
       });
+
       const result = await response.json();
-      console.log(result)
-      setResponse(true)
+      console.log(result);
+      setResponse(true);
     } catch (error) {
       alert(error);
     }
@@ -73,7 +74,7 @@ const About = () => {
                     Neha is a visual artist, known for her minimalistic style.
                   </p>
                   <Link
-                  target="_blank"
+                    target="_blank"
                     href="https://www.linkedin.com/in/neha-patil-38ab63146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     className="w-full flex items-center mt-auto text-md underline gap-2 font-medium"
                   >
@@ -177,7 +178,11 @@ const About = () => {
             similique ad nihil earum distinctio accusamus, suscipit voluptatem.
             Aspernatur, repellat quasi!
           </p>
-          <Link target="_blank" href="https://wa.link/r4o0wm" className="flex items-center justify-start gap-3 text-sm font-semibold text-white bg-black rounded-[5px] p-2">
+          <Link
+            target="_blank"
+            href="https://wa.link/r4o0wm"
+            className="flex items-center justify-start gap-3 text-sm font-semibold text-white bg-black rounded-[5px] p-2"
+          >
             <BsWhatsapp />
             CONNECT ON WHATSAPP
           </Link>
@@ -245,10 +250,12 @@ const About = () => {
                 onChange={handleChange}
               ></textarea>
             </span>
-            <button 
+            <button
               disabled={response}
-              type="submit" className="w-fit px-6 py-2 bg-black text-white rounded-[4px] text-sm font-semibold">
-              {response ? 'Form Submitted': 'SUBMIT'}
+              type="submit"
+              className="w-fit px-6 py-2 bg-black text-white rounded-[4px] text-sm font-semibold"
+            >
+              {response ? "Form Submitted" : "SUBMIT"}
             </button>
           </div>
         </form>

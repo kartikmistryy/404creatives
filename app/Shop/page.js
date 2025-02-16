@@ -9,10 +9,10 @@ const chivo = Chivo({
 
 const Shop = () => {
   return (
-    <div className={`${chivo.className} flex flex-col items-start justify-start h-full md:mt-[10vh] mt-16 w-full md:px-10 px-5 max-w-[100vw]`}>
-        <h1 className='my-20 md:text-8xl text-6xl text-[#252222]'>COMING <br /> SOON</h1>
+    <div className={`${chivo.className} flex flex-col items-start justify-start min-h-[100vh] h-full md:mt-[10vh] mt-16 w-full md:px-10 px-5 max-w-[100vw]`}>
+        <h1 className='py-32 md:text-8xl text-6xl text-[#252222]'>COMING <br /> SOON</h1>
 
-        <main className='w-full max-w-[100vw] grid grid-cols-2 lg:grid-cols-4 justify-between items-center my-10 gap-20 font-sans'>
+        <main className='w-full h-full max-w-[100vw] grid grid-cols-2 lg:grid-cols-4 justify-between items-center py-10 gap-20 font-sans'>
             <span className='flex flex-col items-start justify-center w-full h-full'>
             <Image width={200} height={200} className='w-[100px] h-[100px] md:h-[120px] md:w-[120px] my-5 object-contain' alt='image' src='/shopIcons/shop1.png'  />
                 <h3 className='text-xl md:text-3xl font-medium'>HANDMADE<br /> RUGS</h3>
