@@ -41,7 +41,7 @@ const GraphicDesign = () => {
         </main>
 
         <div className='p-4'>
-            <Carousel className="flex flex-col relative pb-12">
+            {/* <Carousel className="flex flex-col relative pb-12">
                 <CarouselContent>
                     <CarouselItem className="lg:basis-1/4 md:basis-1/3 basis-full relative">
                         <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/1.png" alt='img' width={1000} height={1000}/>
@@ -63,12 +63,39 @@ const GraphicDesign = () => {
                     <CarouselPrevious className="ml-16" />
                     <CarouselNext className="mr-12" />
                 </span>
+            </Carousel> */}
+
+
+            <Carousel className="flex flex-col relative pb-12">
+                <CarouselContent>
+                    <CarouselItem className="relative sm:w-[350px] h-full sm:basis-auto w-full basis-full">
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full sm:max-w-[350px] max-w-full rounded-[5px] object-fill' src="/Branding/1.png" alt='img' width={3000} height={3000}/>
+                    </CarouselItem>
+                    <CarouselItem className="relative sm:w-[350px] h-full sm:basis-auto w-full basis-full">
+                        <Image className='md:w-[400px] lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/2.png" alt='img' width={3000} height={3000}/>
+                    </CarouselItem>
+                    <CarouselItem className="relative sm:w-[450px] h-full sm:basis-auto w-full basis-full">
+                        <div className='flex flex-col gap-2'>
+                            <Image className='w-full lg:h-[260px] h-[240px] rounded-[5px] object-center' src="/Branding/3.png" alt='img' width={3000} height={3000}/>
+                            <Image className='w-full lg:h-[145px] h-[120px] rounded-[5px] object-cover' src="/Branding/4.png" alt='img' width={3000} height={3000}/>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-auto w-fit">
+                        <Image className='md:w-full lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill' src="/Branding/5.png" alt='img' width={3000} height={3000}/>
+                    </CarouselItem>
+                </CarouselContent>
+                <span className='absolute bottom-0 right-0 flex flex-row justify-start items-center w-[100px] bg-red-300 mb-5'>
+                    <CarouselPrevious className="ml-16" />
+                    <CarouselNext className="mr-12" />
+                </span>
             </Carousel>
+
+
         </div>
         <div className='flex md:flex-row flex-col-reverse gap-10 w-full md:px-10 px-5 py-10 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-4 w-full relative'>
                 <span className='w-full h-full basis-2/3 px-10'>
-                    <Image className='md:w-[500px] md:h-full w-[90%] rounded-[5px] mx-auto h-[300px] object-contain' src='/gd_newsletter.png' height={1000} width={1000} alt='img'/>
+                    <Image className='md:w-[500px] md:h-full w-[90%] rounded-[5px] mx-auto h-[300px] object-contain' src='/gd_newsletter.png' height={2000} width={2000} alt='img'/>
                 </span>
                 <span className='relative md:flex hidden md:flex-col grid-cols-2 md:gap-5 gap-2 h-full w-full basis-1/3'>
                     <motion.img 
