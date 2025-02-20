@@ -33,7 +33,7 @@ const NewsletterModal = ({ closeModal }) => {
         setEmail('');
         setTimeout(() => {
           closeModal(false)
-        }, [300])
+        }, 300)
       } else {
         setMessage(data.error || 'Something went wrong.');
       }

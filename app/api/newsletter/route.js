@@ -1,28 +1,30 @@
 import { google } from 'googleapis';
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
 
 export async function POST(req) {
   try {
-    const { email } = await req.json();
+    const body = await req.json();
+    const email = body.email;
 
     if (!email) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    // Load service account credentials
-    const keyFilePath = path.join(process.cwd(), '404creatives.json');
+    // Load credentials from environment variables
     const auth = new google.auth.GoogleAuth({
-      keyFile: keyFilePath,
+      credentials: {
+        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'), // Fix newlines in private key
+      },
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
     const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = '19FLyMKZ9L9BbLw6EzCBUKXU0gAVC3qTtR_xX6szLF_0';
-    const range = 'Sheet1!B3:B'; // Update to match your sheet name
 
-    // Append the email to the sheet
+    const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID; // Use .env variable
+    const range = 'Sheet1!B3:B'; // Adjust as needed
+
+    // Append the email to the Google Sheet
     await sheets.spreadsheets.values.append({
       spreadsheetId,
       range,
@@ -35,6 +37,6 @@ export async function POST(req) {
     return NextResponse.json({ message: 'Email submitted successfully' }, { status: 200 });
   } catch (error) {
     console.error('Error submitting email:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json(error, { status: 500 });
   }
 }
