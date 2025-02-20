@@ -12,10 +12,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "404 Creative",
+  title: "404Creatives",
   description: "",
   icons: {
-    icon: "/favicon.ico", // Ensures proper favicon usage
+    icon: "/favicon.ico",
   },
 };
 
