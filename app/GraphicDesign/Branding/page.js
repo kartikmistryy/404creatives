@@ -33,9 +33,9 @@ const Branding = () => {
                     <p className='text-lg'>A complete brand identity for Trust Consultant Group, including brand guidelines, stationery and PowerPoint templates. The design focuses on professionalism and consistency, reflecting the company&apos;s core values of trust and expertise</p>
                </span>
             </div>
-            <div className='w-full h-full md:border-t-[1px] md:border-r-[1px] md:border-black overflow-hidden'>
+            <Link href="/GraphicDesign/Branding/TrustConsultGroup" className='w-full h-full md:border-t-[1px] md:border-r-[1px] md:border-black overflow-hidden'>
                 <Image width={3000} height={3000} alt="img" className='w-full h-full min-h-[350px] md:min-h-0 scale-[130%] object-cover object-center' src="/Branding/trustConsultGroup.jpeg" />
-            </div>
+            </Link>
         </div>
 
         <div className='w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black'>
