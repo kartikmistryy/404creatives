@@ -18,7 +18,6 @@ const dancingScript = Dancing_Script({
 });
 
 const Navbar = ({ linkTitles, links }) => {
-  console.log(linkTitles, links)
 
   const [showMenu, setShowMenu] = useState(false)
   const [isResponsive, setIsResponsive] = useState(false)
