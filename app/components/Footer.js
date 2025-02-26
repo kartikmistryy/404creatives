@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import { Chivo } from 'next/font/google';
-import Threads from './icons/Threads';
 
 
 const chivo = Chivo({
