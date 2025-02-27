@@ -36,7 +36,7 @@ const Navbar = ({ linkTitles, links }) => {
                 </button>
                 <ul className={`flex flex-col gap-5 items-end ${chivo.className}`}>
                   <li className='font-normal md:text-[1.6vw] text-2xl'><a href="/About">About</a></li>
-                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="#">Contact us</a></li>
+                  <li className='font-normal md:text-[1.6vw] text-2xl'><a href="/Contact">Contact us</a></li>
                   {
                     linkTitles &&  (
                       linkTitles.map((title, index) => {
