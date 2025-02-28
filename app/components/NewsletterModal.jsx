@@ -44,14 +44,20 @@ const NewsletterModal = ({ closeModal }) => {
     }
   };
 
+  const screenClicked = (e) => {
+    if (e.target.id === 'modalParent') {
+      closeModal(false)
+    }
+  }
+
   return (
-    <div className='w-screen h-screen z-[222] bg-transparent flex justify-center items-center fixed p-5'>
-      <motion.div initial={{ translateY: 50 }} animate={{ translateY: 0 }} transition={{ type: "tween", stiffness: 200, damping: 100 }}
+    <div id='modalParent' onClick={(e) => screenClicked(e)} className='w-screen h-screen z-[222] bg-transparent flex justify-center items-center fixed p-5'>
+      <motion.div id="modal" initial={{ translateY: 50 }} animate={{ translateY: 0 }} transition={{ type: "tween", stiffness: 200, damping: 100 }}
         style={{ boxShadow: "10px 14px 0px #000" }}
         className='md:w-[500px] md:h-[300px] w-[380px] h-fit md:scale-100 scale-50 bg-white rounded-[20px] border-2 border-black'>
         
-        <span onClick={() => closeModal(false)} className='p-3 w-full h-10 flex items-start justify-end border-b-2 border-black'>
-          <GrClose className='cursor-pointer' />
+        <span className='p-3 w-full h-10 flex items-start justify-end border-b-2 border-black'>
+          <GrClose onClick={() => closeModal(false)} className='cursor-pointer' />
         </span>
 
         <h1 className='font-theovandoesburg font-bold md:text-6xl sm:text-[2.5rem] text-3xl px-4 pt-4 pb-3 text-center tracking-widest'>

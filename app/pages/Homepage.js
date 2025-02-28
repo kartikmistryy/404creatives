@@ -16,7 +16,7 @@ const Homepage = () => {
 
     setTimeout(() => {
       showModal(true);
-    }, [1000])
+    }, [5500])
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);

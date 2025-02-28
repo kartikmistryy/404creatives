@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import { Chivo } from 'next/font/google';
 
@@ -10,6 +10,34 @@ const chivo = Chivo({
 });
 
 const Footer = () => {
+    const [email, setEmail] = useState('')
+
+    const handleSubmit = async () => {
+        console.log(email)
+        if (!email) {
+          return;
+        }
+            
+        try {
+          const response = await fetch('/api/newsletter', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email }),
+          });
+    
+          const data = await response.json();
+    
+          if (response.ok) {
+            setEmail('');
+            alert("Subscribed successfully!")
+          } else {
+            alert("Something went wrong! Please try again.")
+          }
+        } catch (error) {
+            alert("Error occurred! Please try again.")
+        }
+      };
+      
   return (
     <div className={`${chivo.className} bg-[#1e1e1e]`}>
         <div className={`w-full h-full md:px-10 px-5 py-20 text-[#f2f2f2] flex md:flex-row flex-col justify-between md:gap-0 gap-10`}>
@@ -20,9 +48,10 @@ const Footer = () => {
 
             <div className='w-full h-fit flex flex-col md:gap-8 gap-2'>
                 <h2 className='font-normal text-xl text-gray-100'>Get in touch</h2>
-                <span className='flex flex-col md:gap-5 gap-2'>
+                <span className='flex flex-col md:gap-4 gap-2'>
                     <Link className='font-medium underline underline-offset-2 text-gray-300 cursor-pointer'  href="#">404creative.co@gmail.com</Link>
                     <p>+91 98 33 26 7464</p>
+                    <p>+91 95 94 98 7676</p>
                 </span>
             </div>
 
@@ -47,8 +76,8 @@ const Footer = () => {
             <div className='w-full h-fit flex flex-col md:gap-8 gap-2'>
                 <h2 className='font-normal text-xl text-gray-100'>Subscribe to newletter</h2>
                 <span className='flex flex-col items-start gap-4 cursor-pointer'>
-                    <input className='px-3 py-1.5 text-sm text-[#252222] rounded-full' type='text' placeholder='Type your email'/>
-                    <button className='border-[1px] border-[#f2f2f2] px-6 py-1 font-medium active:bg-[#f2f2f2] active:text-[#252222] rounded-full'>Subscribe</button>
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} className='px-3 py-1.5 text-sm text-[#252222] rounded-full' type='text' placeholder='Type your email'/>
+                    <button onClick={handleSubmit} className='border-[1px] border-[#f2f2f2] px-6 py-1 font-medium active:bg-[#f2f2f2] active:text-[#252222] rounded-full'>Subscribe</button>
                 </span>
             </div>
         </div>

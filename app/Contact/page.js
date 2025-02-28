@@ -88,7 +88,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Fransico Andrade"
-                className="p-2 rounded-[4px] text-sm border-[1px] border-[#E5E5E5]"
+                className="p-2 rounded-[4px] text-sm border-[1px] border-[#000]"
               />
             </span>
             <div className="flex md:flex-row flex-col gap-4 w-full">
@@ -103,7 +103,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="fransicoandrade@gmail.com"
-                  className="p-2 rounded-[4px] text-sm"
+                  className="p-2 rounded-[4px] text-sm border-[1px] border-[#000]"
                 />
               </span>
               <span className="flex flex-col gap-2 w-full">
@@ -117,7 +117,7 @@ const Contact = () => {
                   value={formData.phone}
                   placeholder="+123-456-7890"
                   onChange={handleChange}
-                  className="p-2 rounded-[4px] text-sm"
+                  className="p-2 rounded-[4px] text-sm border-[1px] border-[#000]"
                 />
               </span>
             </div>
@@ -127,8 +127,8 @@ const Contact = () => {
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
-                placeholder="Hi, we love the cats!"
-                className="p-2 rounded-[4px] text-sm h-full flex"
+                placeholder="Tell us about the Project(Scope, Timeline, Budget, etc.)"
+                className="p-2 rounded-[4px] text-sm h-full flex border-[1px] border-[#000]"
                 rows={6}
                 disabled={response}
                 value={formData.message}
