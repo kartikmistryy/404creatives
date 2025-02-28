@@ -87,7 +87,7 @@ const Branding = () => {
                     <p className='text-lg'>We created the website, menu, logo, and brand guidelines for BAKE &quot;n&quot; CAKE, along with packaging designs that reflect their unique identity and passion for quality baked goods.</p>
                 </span>
             </div>
-            <div className='w-full h-full flex flex-row border-l-[1px] border-black'>
+            <Link href="/GraphicDesign/Branding/BakenCake" className='w-full h-full flex flex-row border-l-[1px] border-black'>
                 <span className='flex flex-col h-full w-full basis-1/2'>
                     <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center border-b-[1px] border-black' src="/Branding/bakencake1.png" />
                     <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center md:border-b-[1px] border-none border-black' src="/Branding/bakencake2.png" />
@@ -95,7 +95,7 @@ const Branding = () => {
                 <span className='border-l-[1px] border-black flex h-full w-full basis-1/2'>
                     <Image width={1000} height={1000} alt="img" className='w-full md:h-full h-[400px] object-[42%] object-cover' src="/Branding/bakencake3.png" />
                 </span>
-            </div>
+            </Link>
         </div>
     </div>
   )
