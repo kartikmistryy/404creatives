@@ -17,9 +17,9 @@ const NirmalaCreation = () => {
 
         <main>
             <video src='/Branding/nirmala/1.mp4' playsInline autoPlay loop muted controls={false} className='w-full h-auto'></video>
-            <Image priority src='/Branding/nirmala/2.png' width={1000} height={1000} alt='nirmala' className='w-full h-auto'/>
+            <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/nirmala/2.png' width={1000} height={1000} alt='nirmala' className='w-full h-auto'/>
             <video src='/Branding/nirmala/3.mp4' playsInline autoPlay loop muted controls={false} className='w-full h-auto'></video>          
-            <Image priority src='/Branding/nirmala/4.png' width={1000} height={1000} alt='nirmala' className='w-full h-auto'/>
+            <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/nirmala/4.png' width={1000} height={1000} alt='nirmala' className='w-full h-auto'/>
         </main>
     </div>
   )

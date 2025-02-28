@@ -856,13 +856,13 @@ const Illustrations = () => {
 
       {/* Thumbnails */}
       <div className="py-4 hidden md:block">
-        <div className="flex lg:max-w-[1050px] max-w-[800px] h-full flex-row gap-3 overflow-x-scroll px-10 scrollbar-hide py-5 md:p-0 mx-auto">
+        <div className="flex lg:max-w-[1050px] max-w-[800px] h-full flex-row gap-3 overflow-x-scroll px-10 scrollbar-hide py-5 md:p-0 mx-auto overflow-visible">
           {subPreviewImages.map((imgIndex) => (
             <motion.span
               key={imgIndex}
               className="relative flex md:max-w-[240px] max-w-[150px] md:max-h-[130px] max-h-[80px] min-h-[80px] min-w-[120px] rounded-[5px] cursor-pointer"
               onClick={() => handleSubPreviewClick(imgIndex)}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ transform: "translateY(-5px)" }}
               whileTap={{ scale: 0.95 }}
             >
               <span
@@ -872,8 +872,8 @@ const Illustrations = () => {
               ></span>
               <Image
                 src={`/photos/${imgIndex + 1}.png`}
-                height={300}
-                width={300}
+                height={500}
+                width={500}
                 alt={`Thumbnail ${imgIndex + 1}`}
                 className={`w-full h-full object-cover rounded-[5px] z-[10] ${
                   currentIndex == imgIndex ? "scale-105" : "scale-100"

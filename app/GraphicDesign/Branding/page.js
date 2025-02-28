@@ -14,7 +14,7 @@ const Branding = () => {
                 </main>
                 <span className='border-t-[1px] border-black w-full h-fit md:px-10 px-5 flex items-center justify-between py-3'>
                     <p className='md:text-lg text-sm'>By @404creative.co.in </p>
-                    <Image src='/Branding/nirmala_logo.png' width={500} height={500} alt='nirmala_logo' className='w-fit h-12'/>
+                    <Image src='/Branding/nirmala/logo.png' width={500} height={500} alt='nirmala_logo' className='w-fit h-12'/>
                 </span>
             </div>
             <Link href="/GraphicDesign/Branding/NirmalaCreation" className='w-full h-full'>

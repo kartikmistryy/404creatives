@@ -16,11 +16,11 @@ const TrustConsultGroup = () => {
         </div>
 
         <main>
-        <Image priority src='/Branding/trustconsultgroup/01.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
+        <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/trustconsultgroup/01.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
         <video src='/Branding/trustconsultgroup/03.mp4' playsInline autoPlay loop muted controls={false} className='w-full h-auto'></video> 
-        <Image priority src='/Branding/trustconsultgroup/02.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
-        <Image priority src='/Branding/trustconsultgroup/04.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
-        <Image priority src='/Branding/trustconsultgroup/05.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
+        <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/trustconsultgroup/02.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
+        <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/trustconsultgroup/04.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
+        <Image quality={100} unoptimized layout="intrinsic"  priority src='/Branding/trustconsultgroup/05.png' width={4000} height={4000} alt='nirmala' className='w-full h-auto'/>
         </main>
     </div>
   )
