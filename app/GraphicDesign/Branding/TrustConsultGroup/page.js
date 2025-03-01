@@ -7,7 +7,7 @@ const TrustConsultGroup = () => {
     <div className='mt-24 md:mt-[10vh] md:px-10 px-5'>
         <div className='flex flex-row items-center w-full justify-start gap-4 my-4 py-2'>
             <span className='w-fit'>
-                <Image src='/Branding/trustconsultgroup/logo.png' width={500} height={500} alt='trustconsultgroup_logo' className='w-fit md:h-12 h-10'/>
+                <Image src='/Branding/trustconsultgroup/logo.png' width={500} height={500} alt='trustconsultgroup_logo' className='w-fit md:h-12 h-10 min-w-[60px] min-h-[60px]'/>
             </span>
             <span>
                 <h1 className='md:text-base text-sm font-medium'>Trust Consult Group</h1>

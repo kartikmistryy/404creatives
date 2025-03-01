@@ -39,6 +39,28 @@ const Branding = () => {
         </div>
 
         <div className='w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black'>
+            <div className='w-full h-full flex flex-col justify-between items-start border-r-[1px] border-black'>
+                <main className='flex flex-col md:px-10 px-5  h-full w-full items-start justify-center min-h-[350px] md:min-h-[40vh] md:h-[40vh] gap-2 border-b-[1px] border-black'>
+                    <h1 className='md:text-[5vw] text-[3.2rem] leading-[100%] md font-medium'>Bake&quot;n&quot;Cake</h1>
+                    <h4 className='md:text-2xl text-xl md:w-2/3 w-full font-medium py-4'>BRANDING + WEBSITE + PACKAGING + STATIONARY</h4>
+                </main>
+                <span className='md:px-10 px-5 py-10 w-full min-h-[350px] md:min-h-[40vh] md:h-[40vh] h-full flex flex-col items-start justify-center md:gap-6 gap-2 basis-1/2'>
+                    <h3 className='text-2xl font-medium'>OVERVIEW</h3>
+                    <p className='text-lg'>We created the website, menu, logo, and brand guidelines for BAKE &quot;n&quot; CAKE, along with packaging designs that reflect their unique identity and passion for quality baked goods.</p>
+                </span>
+            </div>
+            <Link href="/GraphicDesign/Branding/BakenCake" className='w-full h-full flex flex-row border-l-[1px] border-black'>
+                <span className='flex flex-col h-full w-full basis-1/2'>
+                    <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center border-b-[1px] border-black' src="/Branding/bakencake1.png" />
+                    <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center md:border-b-[1px] border-none border-black' src="/Branding/bakencake2.png" />
+                </span>
+                <span className='border-l-[1px] border-black flex h-full w-full basis-1/2'>
+                    <Image width={1000} height={1000} alt="img" className='w-full md:h-full h-[400px] object-[25%] object-cover' src="/Branding/bakencake3.png" />
+                </span>
+            </Link>
+        </div>
+
+        <div className='w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black'>
             <div className='w-full h-[80vh] flex flex-col items-start'>
                 <main className='flex flex-col md:px-10 px-5 py-10 md:py-0 w-full items-start justify-center md:h-[40vh] h-full gap-4 border-b-[1px] border-black'>
                     <h1 className='md:text-[5vw] text-[3.2rem] leading-[100%] font-medium'>AL NUMUU</h1>
@@ -60,7 +82,7 @@ const Branding = () => {
             </div>
         </div>
 
-        <div className='w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black'>
+        {/* <div className='w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black'>
             <div className='w-full h-full flex flex-col justify-between items-start'>
                 <main className='flex flex-col md:px-10 px-5 h-full w-full items-start justify-center min-h-[350px] gap-2 border-b-[1px] border-black'>
                     <h1 className='md:text-[5vw] text-[3.2rem] leading-[100%] md font-medium'>FOOTY</h1>
@@ -74,29 +96,8 @@ const Branding = () => {
             <div className='w-full h-full border-r-[1px] border-black'>
                 <Image width={1000} height={1000} alt="img" className='w-full h-full object-cover' src="/Branding/footy.jpg" />
             </div>
-        </div>
+        </div> */}
 
-        <div className='w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black'>
-            <div className='w-full h-full flex flex-col justify-between items-start border-r-[1px] border-black'>
-                <main className='flex flex-col md:px-10 px-5  h-full w-full items-start justify-center min-h-[350px] md:min-h-[40vh] md:h-[40vh] gap-2 border-b-[1px] border-black'>
-                    <h1 className='md:text-[5vw] text-[3.2rem] leading-[100%] md font-medium'>Bake&quot;n&quot;Cake</h1>
-                    <h4 className='md:text-2xl text-xl md:w-2/3 w-full font-medium py-4'>BRANDING + WEBSITE + PACKAGING + STATIONARY</h4>
-                </main>
-                <span className='md:px-10 px-5 py-10 w-full min-h-[350px] md:min-h-[40vh] md:h-[40vh] h-full flex flex-col items-start justify-center md:gap-6 gap-2 basis-1/2'>
-                    <h3 className='text-2xl font-medium'>OVERVIEW</h3>
-                    <p className='text-lg'>We created the website, menu, logo, and brand guidelines for BAKE &quot;n&quot; CAKE, along with packaging designs that reflect their unique identity and passion for quality baked goods.</p>
-                </span>
-            </div>
-            <Link href="/GraphicDesign/Branding/BakenCake" className='w-full h-full flex flex-row border-l-[1px] border-black'>
-                <span className='flex flex-col h-full w-full basis-1/2'>
-                    <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center border-b-[1px] border-black' src="/Branding/bakencake1.png" />
-                    <Image width={1000} height={1000} alt="img" className='w-full md:h-[40vh] h-[200px] object-cover object-center md:border-b-[1px] border-none border-black' src="/Branding/bakencake2.png" />
-                </span>
-                <span className='border-l-[1px] border-black flex h-full w-full basis-1/2'>
-                    <Image width={1000} height={1000} alt="img" className='w-full md:h-full h-[400px] object-[42%] object-cover' src="/Branding/bakencake3.png" />
-                </span>
-            </Link>
-        </div>
     </div>
   )
 }
