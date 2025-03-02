@@ -47,9 +47,10 @@ const Contact = () => {
 
   return (
     <div className="bg-[#F7F7F7] w-full h-full md:mt-[10vh] mt-24">
+      <div className="w-full h-full max-w-[1600px] mx-auto">
       <div className="w-full h-full md:p-10 p-5">
         <div className="flex w-full flex-col items-start">
-          <h1 className="md:text-8xl text-3xl font-semibold tracking-wide">
+          <h1 className="md:text-8xl text-3xl font-semibold tracking-wide pt-10">
             HAVE A VISION?
           </h1>
           <h1 className="md:text-8xl text-3xl font-semibold tracking-wide md:mt-6 mt-0">
@@ -174,6 +175,7 @@ const Contact = () => {
             <Image src='/Contact/3.jpg' alt="contact1" height={2000} width={2000} className="w-full h-[45%] object-cover border-[1px] border-black"/>
           </span>
         </div>
+      </div>
       </div>
     </div>
   );
