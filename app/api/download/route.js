@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { promises as fs } from 'fs';
 
-const PASSWORD = "Bizness404";
+const PASSWORD = "Letsconnect";
 
 export async function POST(req) {
     const { password } = await req.json();
