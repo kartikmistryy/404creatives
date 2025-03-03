@@ -2,13 +2,13 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { promises as fs } from 'fs';
 
-const PASSWORD = "kartikmistry"; // Change this to your actual password
+const PASSWORD = "Bizness404";
 
 export async function POST(req) {
     const { password } = await req.json();
-    console.log(password);
 
     if (password !== PASSWORD) {
+        alert("Wrong password")
         return NextResponse.json({ error: "Incorrect password" }, { status: 401 });
     }
 

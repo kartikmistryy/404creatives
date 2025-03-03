@@ -24,13 +24,12 @@ const GraphicDesign = () => {
 
   const handleDownload = async () => {
 
-    let password = prompt("Enter the password", "");
+    let password = prompt("Enter the password..", "");
     const response = await fetch("/api/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
     });
-    console.log(response)
 
     if (!response.ok) {
         console.log("Incorrect!");
