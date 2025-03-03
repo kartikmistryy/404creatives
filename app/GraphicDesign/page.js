@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -21,6 +21,32 @@ const chivo = Chivo({
 });
 
 const GraphicDesign = () => {
+
+  const handleDownload = async () => {
+
+    let password = prompt("Enter the password", "");
+    const response = await fetch("/api/download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+    });
+    console.log(response)
+
+    if (!response.ok) {
+        console.log("Incorrect!");
+        return;
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "your-file.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+};
+
   return (
     <div className={`${chivo.className} mt-24 w-full h-full`}>
       <div className="w-full h-full max-w-[1600px] mx-auto">
@@ -387,7 +413,9 @@ const GraphicDesign = () => {
                 alt="img"
                 className="md:w-[35vw] w-[90%] h-full"
               />
-              <BsDownload className="text-xl" />
+              <BsDownload 
+              onClick={() => handleDownload()}
+              className="text-xl" />
             </span>
             <span className="flex flex-row items-end gap-4">
               <Image
