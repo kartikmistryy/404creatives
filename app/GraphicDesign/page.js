@@ -69,9 +69,8 @@ const GraphicDesign = () => {
           </span>
 
           <p className="md:w-2/5 w-full md:mt-10 mt-4 font-normal md:text-base text-sm">
-            Together, we bring your hand your brand to life. By blending your
-            vision with our creativity, we craft vibrant identities that stand
-            out and leave a lasting impact.
+          Together, We Bring Your Brand to Life. <br /> We blend your vision with our creativity to craft unique, impactful identities. From logos to full branding packages, we’ve got you covered.
+Explore some of our past projects!
           </p>
         </main>
 
@@ -99,7 +98,7 @@ const GraphicDesign = () => {
               <CarouselItem className="relative sm:w-[450px] h-full sm:basis-auto w-full basis-full">
                 <div className="flex flex-col gap-2">
                   <Image
-                    className="w-full lg:h-[260px] h-[240px] rounded-[5px] object-center"
+                    className="w-full lg:h-[260px] h-[240px] rounded-[5px] object-center object-cover"
                     src="/Branding/3.png"
                     alt="img"
                     width={3000}
@@ -251,9 +250,9 @@ const GraphicDesign = () => {
                 <p className="text-md font-medium">404CREATIVE.CO.IN</p>
               </span>
               <p className="md:w-[80%] w-full mt-2 font-normal">
-                Reach your audience with beutifully crafted emails - completely
-                free to send. We design, you connect. Simple, effective and
-                impactful.
+              Reach Your Audience with Beautifully Crafted Emails
+
+            We design, you connect. Simple, effective, and impactful. <br /> Stay ahead with our expertly designed newsletters, delivering your message in style, every week
               </p>
             </div>
           </div>
@@ -274,9 +273,7 @@ const GraphicDesign = () => {
               </button>
             </span>
             <p className="md:w-[70%] w-full md:mt-2 mt-0 font-normal">
-              Get your design in hand and feel the difference. From brochures
-              and flyers to custom invitations, we bring your vision to life
-              with high-quality prints that leave a lasting{" "}
+            From brochures to ready-to-publish books (KDP-compliant) and more, bring your print ideas to life. You dream it! We design it!
             </p>
           </div>
 

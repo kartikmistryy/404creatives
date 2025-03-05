@@ -37,7 +37,7 @@ const Shop = () => {
             />
             <h3 className="text-xl md:text-3xl font-medium">
               CUSTOM
-              <br /> STICKCERS
+              <br /> STICKERS
             </h3>
           </span>
 

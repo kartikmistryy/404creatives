@@ -154,7 +154,7 @@ const About = () => {
                   </h1>
                   <hr className="border-gray-600 my-2 w-1/2" />
                   <p className="text-sm font-medium">
-                    Tiko makes sure he&apos;s not working.
+                    Tikko makes sure he&apos;s not working.
                   </p>
                 </span>
                 <span className="w-full p-2 flex items-center justify-center border-[1px] rounded-[10px] border-gray-200">

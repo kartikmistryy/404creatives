@@ -296,8 +296,9 @@ const Illustrations = () => {
     <div
       className={`${chivo.className} flex flex-col w-full mt-24 lg:mt-20 relative`}
     >
-      {/* Desktop Carousel View */}
-      <div className="w-full h-auto py-4 hidden md:block overflow-hidden">
+      <div className="w-full max-w-[1000px] mx-auto">
+{/* Desktop Carousel View */}
+<div className="w-full h-auto py-4 hidden md:block overflow-hidden">
         <motion.div
           id="main"
           className="relative cursor-grab"
@@ -328,8 +329,8 @@ const Illustrations = () => {
             transition={{ type: "spring", stiffness: 200, damping: 30 }}
             className="flex"
           >
-            <div className="flex flex-row basis-1/8 flex-shrink-0">
-              <div className="w-full">
+            <div className="flex flex-row flex-shrink-0 overflow-hidden justify-center items-center">
+              <div className="w-full max-max-w-[1000px]">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -337,7 +338,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/1.png`}
                     width={800}
                     height={800}
@@ -354,7 +355,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/2.png`}
                     width={800}
                     height={800}
@@ -371,7 +372,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/3.png`}
                     width={800}
                     height={800}
@@ -388,7 +389,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/4.png`}
                     width={800}
                     height={800}
@@ -405,7 +406,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/5.png`}
                     width={800}
                     height={800}
@@ -422,7 +423,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/6.png`}
                     width={800}
                     height={800}
@@ -439,7 +440,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/7.png`}
                     width={800}
                     height={800}
@@ -456,7 +457,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/8.png`}
                     width={800}
                     height={800}
@@ -473,7 +474,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/9.png`}
                     width={800}
                     height={800}
@@ -490,7 +491,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/10.png`}
                     width={800}
                     height={800}
@@ -507,7 +508,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/11.png`}
                     width={800}
                     height={800}
@@ -524,7 +525,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/12.png`}
                     width={800}
                     height={800}
@@ -541,7 +542,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/13.png`}
                     width={800}
                     height={800}
@@ -558,7 +559,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/14.png`}
                     width={800}
                     height={800}
@@ -575,7 +576,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/15.png`}
                     width={800}
                     height={800}
@@ -592,7 +593,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/16.png`}
                     width={800}
                     height={800}
@@ -609,7 +610,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/17.png`}
                     width={800}
                     height={800}
@@ -626,7 +627,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/18.png`}
                     width={800}
                     height={800}
@@ -643,7 +644,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/19.png`}
                     width={800}
                     height={800}
@@ -660,7 +661,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/20.png`}
                     width={800}
                     height={800}
@@ -677,7 +678,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/21.png`}
                     width={800}
                     height={800}
@@ -694,7 +695,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-max-w-[1000px] w-full w-full h-auto"
                     src={`/photos/22.png`}
                     width={800}
                     height={800}
@@ -711,7 +712,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/23.png`}
                     width={800}
                     height={800}
@@ -728,7 +729,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/24.png`}
                     width={800}
                     height={800}
@@ -745,7 +746,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/25.png`}
                     width={800}
                     height={800}
@@ -762,7 +763,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/26.png`}
                     width={800}
                     height={800}
@@ -779,7 +780,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/27.png`}
                     width={800}
                     height={800}
@@ -796,7 +797,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/28.png`}
                     width={800}
                     height={800}
@@ -813,7 +814,7 @@ const Illustrations = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    className="w-[100vw] h-auto"
+                    className="max-w-[1000px] w-full h-auto"
                     src={`/photos/29.png`}
                     width={800}
                     height={800}
@@ -882,6 +883,7 @@ const Illustrations = () => {
             </motion.span>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

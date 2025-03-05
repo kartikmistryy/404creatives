@@ -9,7 +9,9 @@ const Branding = () => {
 
           <div className="w-full h-full flex flex-col justify-between items-start  border-r-[1px] border-black">
             <div className="w-full h-full">
-              <main className="flex flex-col gap-2 md:px-10 px-5 md:pt-[14vh] pt-10 justify-center min-h-[350px] max-w-[800px] ml-auto">
+              <Link 
+              href="/GraphicDesign/Branding/NirmalaCreation"
+              className="flex flex-col gap-2 md:px-10 px-5 md:pt-[14vh] pt-10 justify-center min-h-[350px] max-w-[800px] ml-auto">
                 <h2 className={`font-lovelace md:text-[3.8vw] text-[2rem]`}>
                   New
                 </h2>
@@ -19,11 +21,11 @@ const Branding = () => {
                 <h4 className="md:text-2xl text-xl md:w-2/3 w-full font-medium py-4">
                   BRANDING + PACKAGING + WEBSITE + EXTRAS
                 </h4>
-              </main>
+              </Link>
             </div>
             
             <div className="w-full h-fit border-t-[1px] border-black">
-              <span className=" w-full h-fit md:px-10 px-5 flex items-center justify-between py-3 max-w-[800px] ml-auto">
+              <Link href="/GraphicDesign/Branding/NirmalaCreation" className=" w-full h-fit md:px-10 px-5 flex items-center justify-between py-3 max-w-[800px] ml-auto">
                 <p className="md:text-lg text-sm">By @404creative.co.in </p>
                 <Image
                   src="/Branding/nirmala/logo.png"
@@ -32,7 +34,7 @@ const Branding = () => {
                   alt="nirmala_logo"
                   className="w-fit h-12"
                 />
-              </span>
+              </Link>
             </div>
           </div>
           <Link
@@ -52,14 +54,16 @@ const Branding = () => {
         <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start">
           <div className="w-full h-full flex flex-col justify-between items-start  border-t-[1px] border-black">
             <div className="w-full min-h-[350px] h-[40vh] border-b-[1px] border-black">
-              <main className="flex flex-col md:px-10 px-5 gap-2 h-full w-full items-start  py-10 justify-center  max-w-[800px] mx-auto">
+              <Link
+              href="/GraphicDesign/Branding/TrustConsultGroup" 
+              className="flex flex-col md:px-10 px-5 gap-2 h-full w-full items-start  py-10 justify-center  max-w-[800px] mx-auto">
                 <h1 className="md:text-[5rem] text-[3.2rem] leading-[100%] md font-medium">
                   TRUST CONSULT GROUP
                 </h1>
                 <h4 className="md:text-2xl text-xl  md:w-2/3 w-full font-medium py-4">
                   BRANDING + PPT TEMPLATE + MARKETING MATERIAL
                 </h4>
-              </main>
+              </Link>
             </div>
             <span className="md:px-10 px-5 w-full min-h-[350px] h-[40vh] flex flex-col items-start justify-center md:gap-6 gap-2 md:pt-0 py-10 max-w-[800px] mx-auto">
               <h3 className="text-2xl font-medium">OVERVIEW</h3>
@@ -67,7 +71,7 @@ const Branding = () => {
                 A complete brand identity for Trust Consultant Group, including
                 brand guidelines, stationery and PowerPoint templates. The
                 design focuses on professionalism and consistency, reflecting
-                the company&apos;s core values of trust and expertise
+                the company&apos;s core values of trust and expertise.
               </p>
             </span>
           </div>
@@ -88,9 +92,9 @@ const Branding = () => {
         <div className="w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black">
           <div className="w-full h-full flex flex-col justify-between items-start border-r-[1px] border-black">
           <div className="w-full h-full border-b-[1px] border-black">
-            <main className="flex flex-col gap-2 md:px-10 px-5 md:pt-[14vh] pt-10 justify-center min-h-[350px] max-w-[800px] ml-auto">
+            <main className="flex flex-col gap-2 md:px-10 px-5 pt-0 justify-center min-h-[350px] max-w-[800px] ml-auto">
               <h1 className="md:text-[5vw] text-[3.2rem] leading-[100%] md font-medium">
-                Bake&quot;n&quot;Cake
+                BAKE&quot;n&quot;CAKE
               </h1>
               <h4 className="md:text-2xl text-xl md:w-2/3 w-full font-medium py-4">
                 BRANDING + WEBSITE + PACKAGING + STATIONARY
@@ -142,25 +146,27 @@ const Branding = () => {
         <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black">
           <div className="w-full h-[80vh] flex flex-col items-start">
           <div className="w-full min-h-[350px] h-[40vh] border-b-[1px] border-black">
-          <main className="flex flex-col md:px-10 px-5 gap-2 h-full w-full items-start  py-10 justify-center  max-w-[800px] mx-auto">
+          <Link href="/GraphicDesign/Branding/AlNumuu" className="flex flex-col md:px-10 px-5 gap-2 h-full w-full items-start  py-10 justify-center  max-w-[800px] mx-auto">
                 <h1 className="md:text-[5vw] text-[3.2rem] leading-[100%] font-medium">
                   AL NUMUU
                 </h1>
                 <h4 className="md:text-2xl text-xl md:w-2/3 w-full font-medium">
                   BRANDING + MARKETING + STATIONARY
                 </h4>
-              </main>
+              </Link>
             </div>
             <span className="md:px-10 px-5 w-full min-h-[350px] h-[40vh] flex flex-col items-start justify-center md:gap-6 gap-2 md:pt-0 py-10 max-w-[800px] mx-auto">
               <h3 className="text-2xl font-medium">OVERVIEW</h3>
               <p className="text-lg md:w-[95%] w-full">
-                A full brand identity for AL Nummu, incorporating logo design,
+                A full brand identity for AL Numuu, incorporating logo design,
                 brand guidelines, marketing materials, and stationery, focused
-                on clarity, professionalism and visual impact
+                on clarity, professionalism and visual impact.
               </p>
             </span>
           </div>
-          <div className="w-full h-full flex flex-row border-l-[1px] border-black">
+          <Link 
+          href="/GraphicDesign/Branding/AlNumuu"
+          className="w-full h-full flex flex-row border-l-[1px] border-black">
             <span className="flex flex-col h-full w-full basis-1/2">
               <Image
                 width={1000}
@@ -186,7 +192,7 @@ const Branding = () => {
                 src="/Branding/al_nummu3.png"
               />
             </span>
-          </div>
+          </Link>
         </div>
     </div>
   );
