@@ -228,7 +228,7 @@ Explore some of our past projects!
           <div className="flex flex-col md:w-[80%] w-full mt-10">
             <span className="flex md:flex-col flex-row gap-4">
               <h2 className="md:text-4xl text-xl font-medium">EMAIL DESIGN</h2>
-              <button className="rounded-full">
+              <Link href="/ComingSoon" className="rounded-full">
                 <Image
                   className="md:w-36 w-20 h-full"
                   src="/rightArrow.png"
@@ -236,7 +236,7 @@ Explore some of our past projects!
                   width={200}
                   height={200}
                 />
-              </button>
+              </Link>
             </span>
             <div className="flex flex-col mt-10">
               <span className="flex flex-row items-center justify-start gap-0">
@@ -262,7 +262,7 @@ Explore some of our past projects!
           <div className="flex flex-col md:w-[80%] w-full">
             <span className="w-full h-20 flex flex-row items-center md:gap-16 gap-4">
               <h2 className="md:text-4xl text-xl font-medium">PRINT DESIGN</h2>
-              <button className="rounded-full">
+              <Link href="/ComingSoon" className="rounded-full">
                 <Image
                   className="md:w-36 w-20 h-full"
                   src="/rightArrow.png"
@@ -270,7 +270,7 @@ Explore some of our past projects!
                   width={200}
                   height={200}
                 />
-              </button>
+              </Link>
             </span>
             <p className="md:w-[70%] w-full md:mt-2 mt-0 font-normal">
             From brochures to ready-to-publish books (KDP-compliant) and more, bring your print ideas to life. You dream it! We design it!
@@ -318,7 +318,7 @@ Explore some of our past projects!
           <div className="flex flex-col md:w-[80%] w-full">
             <span className="w-full h-20 flex flex-row items-center md:gap-16 gap-4">
               <h2 className="md:text-4xl text-xl font-medium">WEB DESIGN</h2>
-              <button className="rounded-full">
+              <Link href="/ComingSoon" className="rounded-full">
                 <Image
                   className="md:w-36 w-20 h-full"
                   src="/rightArrow.png"
@@ -326,7 +326,7 @@ Explore some of our past projects!
                   width={200}
                   height={200}
                 />
-              </button>
+              </Link>
             </span>
             <p className="md:w-[55%] w-full mt-2 font-normal">
               Get a website that&apos;s as unique as your brand. We create

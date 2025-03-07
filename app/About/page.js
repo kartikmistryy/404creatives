@@ -47,7 +47,7 @@ const About = () => {
   };
 
   return (
-    <div className="mt-24 w-full h-full bg-gray-100">
+    <div className="mt-24 w-full h-full min-h-[75vh] bg-gray-100">
       <div className="w-full h-full max-w-[1600px] mx-auto">
         <main className="flex flex-col w-full h-full">
           <div className="flex xl:flex-row flex-col justify-between items-center w-full h-full md:p-10 p-5 gap-10">
@@ -124,7 +124,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="md:p-10 p-5">
+          <div className="md:p-10 p-5 flex flex-row w-full h-full justify-between relative">
             <div className="xl:w-[60%] w-full bg-white h-full  rounded-xl flex sm:flex-row flex-col gap-5 xl:pl-20 p-4">
               <div className="flex flex-row h-full min-h-[180px] lg:max-h-[200px] max-h-full basis-1/2 gap-4">
                 <span className="w-full flex flex-col">
@@ -168,7 +168,9 @@ const About = () => {
                 </span>
               </div>
             </div>
-            <div>{/* Down arrow icon */}</div>
+            <div className="xl:flex hidden absolute bottom-0 right-0">
+              <Image src="/Logo/404.png" width={1000} height={1000} className="w-[250px] h-[250px]"/>
+            </div>
           </div>
         </main>
       </div>
