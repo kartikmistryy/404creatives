@@ -27,6 +27,15 @@ html, body {
   scroll-behavior: smooth !important;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video {
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .carousel {
   pointer-events: none; /* Disable any interaction */
 }
