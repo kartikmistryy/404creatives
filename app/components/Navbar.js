@@ -84,10 +84,10 @@ const Navbar = ({ linkTitles, links }) => {
 
               <ul className="lg:flex hidden flex-row items-center justify-evenly md:gap-24 gap-10 w-fit md:text-[1.1rem] text-xl font-medium ml-[-5vw]">
                 <li>
-                  <a href="/GraphicDesign">Graphic Design</a>
+                  <a href="/BrandIdentity">Brand Identity</a>
                 </li>
                 <li>
-                  <a href="/Illustrations">Illustration</a>
+                  <a href="/VisualDevelopment">Visual Development</a>
                 </li>
                 <li>
                   <a href="/About">About</a>

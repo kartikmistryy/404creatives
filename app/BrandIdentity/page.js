@@ -51,7 +51,7 @@ const GraphicDesign = () => {
       <div className="w-full h-full max-w-[1600px] mx-auto">
         <main className="md:px-10 px-5 pt-14 pb-10">
           <h1 className="md:text-[7vw] h-full leading-[100%] text-3xl font-extralight">
-            GRAPHIC DESIGN <br />
+            BRAND IDENTITY <br />
             <i className="font-lovelace">Portfolio</i>
           </h1>
 
