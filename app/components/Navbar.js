@@ -84,13 +84,13 @@ const Navbar = ({ linkTitles, links }) => {
 
               <ul className="lg:flex hidden flex-row items-center justify-evenly md:gap-24 gap-10 w-fit md:text-[1.1rem] text-xl font-medium ml-[-5vw]">
                 <li>
-                  <a href="/BrandIdentity">Brand Identity</a>
+                  <Link href="/BrandIdentity">Brand Identity</Link>
                 </li>
                 <li>
-                  <a href="/VisualDevelopment">Visual Development</a>
+                  <Link href="/VisualDevelopment">Visual Development</Link>
                 </li>
                 <li>
-                  <a href="/About">About</a>
+                  <Link href="/About">About</Link>
                 </li>
               </ul>
 
@@ -115,10 +115,10 @@ const Navbar = ({ linkTitles, links }) => {
           <div>
             <ul className="lg:hidden flex flex-row justify-center gap-8 w-[100vw] text-[0.7rem] sm:text-[0.8rem] font-medium mx-auto px-8">
               <li>
-                <a href="/GraphicDesign">Graphic Design</a>
+                <a href="/BrandIdentity">Brand Identity</a>
               </li>
               <li>
-                <a href="/Illustrations">Illustration</a>
+                <a href="/VisualDevelopment">Visual Development</a>
               </li>
               <li className="md:flex hidden">
                 <a href="/About">About</a>
