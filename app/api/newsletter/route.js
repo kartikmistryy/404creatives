@@ -3,7 +3,6 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req) {
   try {
-    console.log("Private Key:", process.env.GOOGLE_PRIVATE_KEY ? "Loaded" : "Not Loaded");
 
     const body = await req.json();
     const email = body.email;
@@ -12,7 +11,6 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    // Load credentials from environment variables
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,

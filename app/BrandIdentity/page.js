@@ -40,11 +40,27 @@ const GraphicDesign = () => {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "your-file.pdf";
+    a.download = "socialMediaKit.pdf";
     document.body.appendChild(a);
     a.click();
     a.remove();
-};
+  };
+
+  const handleFreeDownload = async() => {
+    const response = await fetch("/api/download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+    });
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "solutionsOverview.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
 
   return (
     <div className={`${chivo.className} mt-24 w-full h-full`}>
@@ -394,14 +410,14 @@ Explore some of our past projects!
               </Link>
             </span>
             <p className="md:w-[55%] w-full mt-2 font-normal">
-              No hidden charges-choose what you need, from custom designs to
-              tailored packages. Download our rate card for full transparency
-              and clear pricing for your brand&apos;s needs.
+            No hidden charges – choose what you need, from custom designs to tailored packages. We offer full transparency and clear pricing for your brand&apos;s needs.
             </p>
           </div>
 
           <div className="flex md:flex-row flex-col justify-center gap-10 my-10">
-            <span className="flex flex-row items-end gap-4">
+            <span 
+              onClick={() => handleDownload()}
+              className="flex flex-row items-end gap-4 cursor-pointer">
               <Image
                 src="/contactus/1.png"
                 width={500}
@@ -410,10 +426,11 @@ Explore some of our past projects!
                 className="md:w-[35vw] w-[90%] h-full"
               />
               <BsDownload 
-              onClick={() => handleDownload()}
               className="text-xl" />
             </span>
-            <span className="flex flex-row items-end gap-4">
+            <span 
+            onClick={() => handleFreeDownload()}
+            className="flex flex-row items-end gap-4 cursor-pointer">
               <Image
                 src="/contactus/2.png"
                 width={500}
