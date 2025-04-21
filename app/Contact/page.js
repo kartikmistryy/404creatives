@@ -39,7 +39,6 @@ const Contact = () => {
       });
 
       const result = await response.json();
-      console.log(result);
       setResponse(true);
     } catch (error) {
       alert(error);
@@ -55,13 +54,13 @@ const Contact = () => {
               HAVE A VISION?
             </h1>
             <h1 className="md:text-8xl text-3xl font-semibold tracking-wide md:mt-6 mt-0">
-              LET'S BRING IT TO LIFE!
+              LET&apos;S BRING IT TO LIFE!
             </h1>
 
             <p className="flex lg:w-[60%]  w-full md:mt-10 my-5">
-              Every great idea starts with a spark, and we're here to help you
-              turn that spark into something real. It's not about flashy designs,
-              but about crafting something that feels true and meaningful. Let's
+              Every great idea starts with a spark, and we&apos;re here to help you
+              turn that spark into something real. It&apos;s not about flashy designs,
+              but about crafting something that feels true and meaningful. Let&apos;s
               take that idea and give it the attention it deserves, creating
               something that just clicks.
             </p>
