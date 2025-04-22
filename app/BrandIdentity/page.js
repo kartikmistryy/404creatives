@@ -73,7 +73,7 @@ const GraphicDesign = () => {
 
           <span className="flex items-center justify-between w-fit md:gap-10 gap-4 md:mt-20 mt-10">
             <p className="md:text-4xl text-xl">BRANDING</p>
-            <Link href="/GraphicDesign/Branding" className="rounded-full">
+            <Link href="/BrandIdentity/Branding" className="rounded-full">
               <Image
                 className="md:w-36 w-20 h-full"
                 src="/rightArrow.png"

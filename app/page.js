@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import NewsletterModal from "./components/NewsletterModal";
-// import Homepage from "./pages/Homepage";
 import {Analytics } from '@vercel/analytics/react'  
 import dynamic from "next/dynamic";
 

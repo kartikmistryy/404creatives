@@ -9,6 +9,7 @@ import { BsDownload } from "react-icons/bs";
 
 const Contact = () => {
   const [response, setResponse] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,6 +45,48 @@ const Contact = () => {
       alert(error);
     }
   };
+
+  const handleDownload = async () => {
+
+    let password = prompt("Enter the password..", "");
+    const response = await fetch("/api/download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+    });
+
+    if (!response.ok) {
+        console.log("Incorrect!");
+        return;
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "socialMediaKit.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
+
+  const handleFreeDownload = async() => {
+    const response = await fetch("/api/download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+    });
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "solutionsOverview.pdf";
+    document.body.appendChild(a);
+    setIsDownloading(true);
+    a.click();
+    a.remove();
+    setIsDownloading(false)
+  }
 
   return (
     <div className="bg-[#F7F7F7] w-full h-full md:mt-[10vh] mt-24">
@@ -177,7 +220,7 @@ const Contact = () => {
                 className="md:w-[35vw] w-[90%] h-full"
               />
               <BsDownload 
-              className="text-xl" />
+                className="text-xl" />
             </span>
             <span 
             onClick={() => handleFreeDownload()}
@@ -224,6 +267,7 @@ const Contact = () => {
         </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
