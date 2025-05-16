@@ -10,13 +10,13 @@ const Homepage = () => {
     const handleResize = () => {
       setIsResponsive(window.innerWidth <= 700);
     };
-    
+
     handleResize();
     window.addEventListener("resize", handleResize);
 
     setTimeout(() => {
       showModal(true);
-    }, [5500])
+    }, [60000]);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -27,10 +27,12 @@ const Homepage = () => {
       <video
         className="w-full h-auto"
         autoPlay
-        loop  
+        loop
         muted
         playsInline
+        disablePictureInPicture
         controls={false}
+        preload="auto"
         src={isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}
       ></video>
     </div>
