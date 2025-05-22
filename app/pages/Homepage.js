@@ -20,16 +20,15 @@ const Homepage = () => {
   return (
     <div className="relative w-full h-auto overflow-hidden">
       <video
-        className="w-full h-auto"
+        className="w-full h-auto pointer-events-none"
         autoPlay
         loop
         muted
         playsInline
         disablePictureInPicture
-        controls={false}
         preload="auto"
         src={isResponsive ? "./Phone.mp4" : "./Desktop.mp4"}
-      ></video>
+      />
     </div>
   );
 };
