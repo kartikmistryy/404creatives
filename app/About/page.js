@@ -63,7 +63,7 @@ const About = () => {
                 project we take on leaves a lasting impact.
               </p>
             </div>
-            <div className="flex xl:w-[60%] w-full h-full flex-row justify-between items-center">
+            <div className="flex xl:w-[70%] w-full h-full flex-row justify-between items-center">
               <div className="w-full bg-white h-full p-4 rounded-xl flex sm:flex-row flex-col gap-5">
                 <div className="flex flex-row h-full min-h-[180px] lg:max-h-[200px] max-h-full basis-1/2 gap-4">
                   <span className="w-full flex flex-col">
@@ -72,7 +72,7 @@ const About = () => {
                     </h1>
                     <hr className="border-gray-600 my-2 w-1/2" />
                     <p className="text-sm font-medium">
-                      Neha is a visual artist, known for her minimalistic style.
+                      Neha is the creative force behind the aesthetics, crafting minimalism that’s not just seen, but deeply felt.
                     </p>
                     <Link
                       target="_blank"
