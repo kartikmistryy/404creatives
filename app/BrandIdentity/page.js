@@ -105,7 +105,7 @@ Explore some of our past projects!
               <CarouselItem className="relative sm:w-[350px] h-full sm:basis-auto w-full basis-full">
                 <Image
                   className="md:w-[400px] lg:h-[410px] h-[370px] w-full rounded-[5px] object-fill"
-                  src="/Branding/2.png"
+                  src="/Branding/2.webp"
                   alt="img"
                   width={3000}
                   height={3000}
@@ -115,7 +115,7 @@ Explore some of our past projects!
                 <div className="flex flex-col gap-2">
                   <Image
                     className="w-full lg:h-[260px] h-[240px] rounded-[5px] object-center object-cover"
-                    src="/Branding/3.png"
+                    src="/Branding/3.webp"
                     alt="img"
                     width={3000}
                     height={3000}
@@ -182,7 +182,7 @@ Explore some of our past projects!
                 whileInView={{ translateY: 0, translateX: 0 }}
                 transition={{ duration: 2 }}
                 className="md:w-[280px] md:h-auto  w-full h-[200px] rounded-[5px] md:absolute top-[30%] right-10"
-                src="/Newsletter/2.png"
+                src="/Newsletter/2.webp"
                 height={500}
                 width={500}
                 alt="img"
@@ -224,7 +224,7 @@ Explore some of our past projects!
                 whileInView={{ translateY: 0, translateX: 0 }}
                 transition={{ duration: 3 }}
                 className="md:w-[280px] md:h-auto w-[65%] max-w-[280px] h-[320px] absolute top-[30%] right-10 rounded-[5px]"
-                src="/Newsletter/2.png"
+                src="/Newsletter/2.webp"
                 height={500}
                 width={500}
                 alt="img"
@@ -316,7 +316,7 @@ Explore some of our past projects!
               <CarouselItem className="md:basis-2/4 basis-full">
                 <Image
                   className="w-[600px] h-[350px] rounded-[5px] object-cover object-center"
-                  src="/Print/3.png"
+                  src="/Print/3.webp"
                   alt="img"
                   width={500}
                   height={500}
@@ -353,44 +353,17 @@ Explore some of our past projects!
 
           <div
             id="webdes"
-            className="relative md:flex hidden md:flex-row  items-end justify-between my-10 min-h-[400px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-visible"
+            className="relative md:flex hidden md:flex-row  items-end justify-between my-0 min-h-[450px] lg:max-w-[800px] md:max-w-[650px] max-w-full mx-auto overflow-x-visible"
           >
-            <motion.img
-              initial={{ translateX: -30 }}
-              whileInView={{ translateX: 10 }}
-              transition={{ duration: 1 }}
-              src="/Webdes/tablet.png"
-              className="md:w-[150px] md:h-[200px] w-[350px] h-[250px] col-span-1 mt-auto z-20"
-            />
-            <Image
-              width={600}
-              height={600}
-              src="/Webdes/desktop.png"
-              alt="desktop-png"
-              className="md:w-[500px] md:h-full w-[350px] h-[250px] col-span-1 absolute left-1/2 translate-x-[-50%] z-0"
-            />
-            <motion.img
-              initial={{ translateX: 70 }}
-              whileInView={{ translateX: 90 }}
-              transition={{ duration: 1 }}
-              src="/Webdes/laptop.png"
-              className="md:w-[300px] md:h-full w-[350px] h-[250px] col-span-1 z-20"
-            />
-            <motion.img
-              initial={{ translateX: 30 }}
-              whileInView={{ translateX: -50 }}
-              transition={{ duration: 1 }}
-              src="/Webdes/phone.png"
-              className="md:w-[80px] md:h-[150px] w-[150px] h-[100px] col-span-1 z-20"
-            />
+           <Image src="/Branding/webdes_mockup.webp" alt="webdes_mockup" width={500} height={500} className="w-full h-full scale-110"/>
           </div>
           <div className="md:hidden flex my-10">
             <Image
               alt="webdes-img"
-              src="/mockup_webdes.png"
+              src="/Branding/webdes_mockup.webp"
               width={300}
               height={300}
-              className="object-contain flex w-full h-full"
+              className="object-contain flex w-full h-full scale-110"
             />
           </div>
         </div>

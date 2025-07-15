@@ -5,7 +5,7 @@ import { promises as fs } from 'fs';
 
 export async function POST(req) {
 
-    const filePath = path.join(process.cwd(), 'public', 'solutionsOverview.pdf'); // Store PDF in 'public'
+    const filePath = path.join(process.cwd(), 'public', 'socialmediakit.pdf'); // Store PDF in 'public'
     const fileBuffer = await fs.readFile(filePath);
 
     return new Response(fileBuffer, {

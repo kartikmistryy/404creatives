@@ -12,13 +12,13 @@ export async function POST(req) {
         return NextResponse.json({ error: "Incorrect password" }, { status: 401 });
     }
 
-    const filePath = path.join(process.cwd(), 'public', 'socialmediakit_404.pdf'); // Store PDF in 'public'
+    const filePath = path.join(process.cwd(), 'public', 'solutionsOverview.pdf'); 
     const fileBuffer = await fs.readFile(filePath);
 
     return new Response(fileBuffer, {
         headers: {
             'Content-Type': 'application/pdf',
-            'Content-Disposition': 'attachment; filename="your-file.pdf"',
+            'Content-Disposition': 'attachment; filename="solutionsOverview.pdf"',
         },
     });
 }
