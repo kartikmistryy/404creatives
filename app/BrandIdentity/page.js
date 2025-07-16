@@ -386,33 +386,6 @@ Explore some of our past projects!
             No hidden charges – choose what you need, from custom designs to tailored packages. We offer full transparency and clear pricing for your brand&apos;s needs.
             </p>
           </div>
-
-          <div className="flex md:flex-row flex-col justify-center gap-10 my-10">
-            <span 
-              onClick={() => handleDownload()}
-              className="flex flex-row items-end gap-4 cursor-pointer">
-              <Image
-                src="/contactus/1.png"
-                width={500}
-                height={500}
-                alt="img"
-                className="md:w-[35vw] w-[90%] h-full"
-              />
-              {/* <BsDownload className="text-xl" /> */}
-            </span>
-            <span 
-            onClick={() => handleFreeDownload()}
-            className="flex flex-row items-end gap-4 cursor-pointer">
-              <Image
-                src="/contactus/2.png"
-                width={500}
-                height={500}
-                alt="img"
-                className="md:w-[35vw] w-[90%] h-full"
-              />
-              {/* <BsDownload className="text-xl" /> */}
-            </span>
-          </div>
         </div>
       </div>
     </div>
