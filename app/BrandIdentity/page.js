@@ -398,8 +398,7 @@ Explore some of our past projects!
                 alt="img"
                 className="md:w-[35vw] w-[90%] h-full"
               />
-              <BsDownload 
-              className="text-xl" />
+              {/* <BsDownload className="text-xl" /> */}
             </span>
             <span 
             onClick={() => handleFreeDownload()}
@@ -411,7 +410,7 @@ Explore some of our past projects!
                 alt="img"
                 className="md:w-[35vw] w-[90%] h-full"
               />
-              <BsDownload className="text-xl" />
+              {/* <BsDownload className="text-xl" /> */}
             </span>
           </div>
         </div>

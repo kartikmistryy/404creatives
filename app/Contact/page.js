@@ -219,8 +219,6 @@ const Contact = () => {
                 alt="img"
                 className="md:w-[35vw] w-[90%] h-full"
               />
-              <BsDownload 
-                className="text-xl" />
             </span>
             <span 
             onClick={() => handleFreeDownload()}
@@ -232,7 +230,6 @@ const Contact = () => {
                 alt="img"
                 className="md:w-[35vw] w-[90%] h-full"
               />
-              <BsDownload className="text-xl" />
             </span>
           </div>
         </div>

@@ -51,7 +51,7 @@ const Branding = () => {
           </Link>
         </div>
 
-        <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start">
+        {/* <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start">
           <div className="w-full h-full flex flex-col justify-between items-start  border-t-[1px] border-black">
             <div className="w-full min-h-[350px] h-[40vh] border-b-[1px] border-black">
               <Link
@@ -87,9 +87,9 @@ const Branding = () => {
               src="/Branding/trustConsultGroup.jpeg"
             />
           </Link>
-        </div>
+        </div> */}
 
-        <div className="w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black">
+        <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black">
           <div className="w-full h-full flex flex-col justify-between items-start border-r-[1px] border-black">
           <div className="w-full h-full border-b-[1px] border-black">
             <main className="flex flex-col gap-2 md:px-10 px-5 pt-0 justify-center min-h-[350px] max-w-[800px] ml-auto">
@@ -143,7 +143,7 @@ const Branding = () => {
           </Link>
         </div>
 
-        <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black">
+        {/* <div className="w-full md:h-[80vh] h-full flex md:flex-row-reverse flex-col items-start border-t-[1px] border-black">
           <div className="w-full h-[80vh] flex flex-col items-start">
           <div className="w-full min-h-[350px] h-[40vh] border-b-[1px] border-black">
           <Link href="/BrandIdentity/Branding/AlNumuu" className="flex flex-col md:px-10 px-5 gap-2 h-full w-full items-start  py-10 justify-center  max-w-[800px] mx-auto">
@@ -193,7 +193,7 @@ const Branding = () => {
               />
             </span>
           </Link>
-        </div>
+        </div> */}
     </div>
   );
 };
