@@ -210,7 +210,7 @@ const Contact = () => {
         </div>
         <div className="w-full h-full flex md:flex-row flex-col justify-between">
         <div className="w-full flex flex-col justify-between items-start md:p-10 p-5">
-            <h1 className="md:text-[5.5rem] text-3xl font-semibold tracking-wide leading-tight md:w-full w-2/3">LET'S CONNECT / COLLAB?</h1>
+            <h1 className="md:text-[5.5rem] text-3xl font-semibold tracking-wide leading-tight md:w-full w-2/3">LET&apos;S CONNECT / COLLAB?</h1>
 
             <span className='flex flex-row gap-6 md:mt-0 mt-5'>
                     <Link href='https://www.instagram.com/404creative.co.in'><FaInstagram className='md:text-5xl text-3xl cursor-pointer'/></Link>
