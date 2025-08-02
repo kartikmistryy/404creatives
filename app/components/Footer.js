@@ -63,7 +63,7 @@ const Footer = () => {
               >
                 404creative.co@gmail.com
               </Link>
-              <p>+91 98 33 26 7464</p>
+              {/* <p>+91 98 33 26 7464</p> */}
               <p>+91 95 94 98 7676</p>
             </span>
           </div>
