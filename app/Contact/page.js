@@ -10,6 +10,7 @@ import { BsDownload } from "react-icons/bs";
 const Contact = () => {
   const [response, setResponse] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,69 +24,101 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
     try {
-      const response = await fetch("/api/contact", {
+      // Save to Google Sheets only
+      const response = await fetch("/api/contact-sheets", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          to: "kartikmistry301@gmail.com", // Set a fixed recipient email
-          subject: "REACHING OUT",
-          text: `
-            Name: ${formData.name}
-            Email: ${formData.email}
-            Phone: ${formData.phone}
-            Message: ${formData.message}
-          `,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
         }),
       });
 
       const result = await response.json();
-      setResponse(true);
+      
+      if (response.ok) {
+        setResponse(true);
+        // Reset form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        alert(`Error: ${result.error || 'Failed to submit form. Please try again.'}`);
+      }
     } catch (error) {
-      alert(error);
+      console.error('Form submission error:', error);
+      alert('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   const handleDownload = async () => {
-
     let password = prompt("Enter the password..", "");
-    const response = await fetch("/api/download", {
+    if (!password) return;
+
+    setIsDownloading(true);
+    try {
+      const response = await fetch("/api/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
-    });
+      });
 
-    if (!response.ok) {
-        console.log("Incorrect!");
+      if (!response.ok) {
+        alert("Incorrect password!");
         return;
-    }
+      }
 
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "socialMediaKit.pdf";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "socialMediaKit.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } catch (error) {
+      alert("Download failed. Please try again.");
+    } finally {
+      setIsDownloading(false);
+    }
   };
 
   const handleFreeDownload = async() => {
-    const response = await fetch("/api/download", {
+    setIsDownloading(true);
+    try {
+      const response = await fetch("/api/freeDownload", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-    });
+      });
 
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "solutionsOverview.pdf";
-    document.body.appendChild(a);
-    setIsDownloading(true);
-    a.click();
-    a.remove();
-    setIsDownloading(false)
+      if (!response.ok) {
+        alert("Download failed. Please try again.");
+        return;
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "solutionsOverview.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } catch (error) {
+      alert("Download failed. Please try again.");
+    } finally {
+      setIsDownloading(false);
+    }
   }
 
   return (
@@ -180,11 +213,11 @@ const Contact = () => {
                 ></textarea>
               </span>
               <button
-                disabled={response}
+                disabled={response || isSubmitting}
                 type="submit"
-                className="w-fit px-6 py-2 bg-black text-white rounded-[4px] text-sm font-semibold"
+                className="w-fit px-6 py-2 bg-black text-white rounded-[4px] text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {response ? "Form Submitted" : "SUBMIT"}
+                {isSubmitting ? "Submitting..." : response ? "Form Submitted" : "SUBMIT"}
               </button>
             </div>
           </form>

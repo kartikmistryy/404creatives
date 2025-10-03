@@ -93,7 +93,7 @@ const NewsletterModal = () => {
           />
           <button
             type="submit"
-            className="w-fit flex ml-auto border-2 border-black px-6 py-1 my-2 text-sm font-extrabold active:bg-black active:text-white"
+            className="w-fit flex ml-auto border-2 border-black px-6 py-1 my-2 text-sm font-extrabold active:bg-black active:text-white disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={handleSubmit}
             disabled={loading}
           >

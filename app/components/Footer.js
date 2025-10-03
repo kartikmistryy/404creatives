@@ -11,13 +11,14 @@ const chivo = Chivo({
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async () => {
-    console.log(email);
     if (!email) {
       return;
     }
 
+    setIsSubmitting(true);
     try {
       const response = await fetch("/api/newsletter", {
         method: "POST",
@@ -35,6 +36,8 @@ const Footer = () => {
       }
     } catch (error) {
       alert("Error occurred! Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -118,9 +121,10 @@ const Footer = () => {
               />
               <button
                 onClick={handleSubmit}
-                className="border-[1px] border-[#f2f2f2] px-6 py-1 font-medium active:bg-[#f2f2f2] active:text-[#252222] rounded-full"
+                disabled={isSubmitting}
+                className="border-[1px] border-[#f2f2f2] px-6 py-1 font-medium active:bg-[#f2f2f2] active:text-[#252222] rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Subscribe
+                {isSubmitting ? "Subscribing..." : "Subscribe"}
               </button>
             </span>
           </div>

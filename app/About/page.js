@@ -1,10 +1,8 @@
 "use client";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
-import { BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
 
 const About = () => {
@@ -27,7 +25,7 @@ const About = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          to: "kartikmistry301@gmail.com", // Set a fixed recipient email
+          to: "kartikmistry301@gmail.com", 
           subject: "REACHING OUT",
           text: `
             Name: ${formData.name}

@@ -16,10 +16,10 @@ const Branding = () => {
                   New
                 </h2>
                 <h1 className="md:text-[5.5rem] text-[3.2rem] leading-[100%] md font-medium">
-                  NIRMALA <br /> CREATION
+                  RELOFLOW
                 </h1>
-                <h4 className="md:text-2xl text-xl md:w-2/3 w-full font-medium py-4">
-                  BRANDING + PACKAGING + WEBSITE + EXTRAS
+                <h4 className="md:text-2xl text-xl md:w-2/3 w-full uppercase font-medium py-4">
+                  Branding + mascot design + website
                 </h4>
               </Link>
             </div>
@@ -28,7 +28,7 @@ const Branding = () => {
               <Link href="/BrandIdentity/Branding/NirmalaCreation" className=" w-full h-fit md:px-10 px-5 flex items-center justify-between py-3 max-w-[800px] ml-auto">
                 <p className="md:text-lg text-sm">By @404creative.co.in </p>
                 <Image
-                  src="/Branding/nirmala/logo.png"
+                  src="/Branding/reloflow/logo.jpg"
                   width={500}
                   height={500}
                   alt="nirmala_logo"
@@ -36,6 +36,39 @@ const Branding = () => {
                 />
               </Link>
             </div>
+          </div>
+          <Link
+            href="/BrandIdentity/Branding/Reloflow"
+            className="w-full h-full"
+          >
+            <Image
+              width={1000}
+              height={1000}
+              alt="img"
+              className="w-full h-full object-cover"
+              src="/Branding/reloflow/5.png"
+            />
+          </Link>
+        </div>
+
+        <div className="w-full md:h-[80vh] h-full flex md:flex-row flex-col items-start border-t-[1px] border-black">
+          <div className="w-full h-full flex flex-col justify-between items-start border-r-[1px] border-black">
+          <div className="w-full h-full border-b-[1px] border-black">
+            <main className="flex flex-col gap-2 md:px-10 px-5 pt-0 justify-center min-h-[350px] max-w-[800px] ml-auto">
+              <h1 className="md:text-[5vw] text-[3.2rem] leading-[100%] md font-medium">
+                NIRMALA CREATION
+              </h1>
+              <h4 className="md:text-2xl text-xl md:w-2/3 w-full font-medium py-4">
+              BRANDING + PACKAGING + WEBSITE + EXTRAS
+              </h4>
+            </main>
+          </div>
+            <span className="md:px-10 px-5 py-10 w-full min-h-[350px] md:min-h-[40vh] md:h-[40vh] h-full flex flex-col items-start justify-center md:gap-6 gap-2 basis-1/2  max-w-[800px] ml-auto">
+              <h3 className="text-2xl font-medium">OVERVIEW</h3>
+              <p className="text-lg md:w-[90%] w-full">
+              For Nirmala, we developed branding, packaging, and a website that is vibrant, engaging, and tailored to the right audience. The identity balances consistency with a colourful aesthetic, ensuring the brand stands out while staying true to its values.
+              </p>
+            </span>
           </div>
           <Link
             href="/BrandIdentity/Branding/NirmalaCreation"
