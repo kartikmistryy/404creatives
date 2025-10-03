@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa";
 import { BsDownload } from "react-icons/bs";
 
 const Contact = () => {
@@ -222,7 +222,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="md:px-10 px-5 mb-16">
+        {/* <div className="md:px-10 px-5 mb-16">
           <div className="flex flex-col md:w-[80%] w-full">
             <span className="w-full h-20 flex flex-row items-center md:gap-16 gap-4">
               <h2 className="md:text-4xl text-xl font-medium">Download PDF</h2>
@@ -240,7 +240,7 @@ const Contact = () => {
             No hidden charges – choose what you need, from custom designs to tailored packages. We offer full transparency and clear pricing for your brand&apos;s needs.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="w-full h-full flex md:flex-row flex-col justify-between">
         <div className="w-full flex flex-col justify-between items-start md:p-10 p-5">
             <h1 className="md:text-[5.5rem] text-3xl font-semibold tracking-wide leading-tight md:w-full w-2/3">LET&apos;S CONNECT / COLLAB?</h1>
@@ -253,10 +253,13 @@ const Contact = () => {
                             <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
                         </svg>
                     </Link>
-                    <Link href='https://x.com/404creative_Co'>
+                    {/* <Link href='https://x.com/404creative_Co'>
                         <svg className='md:text-5xl text-3xl w-[28px] h-[28px] md:w-[42px] md:h-[42px] cursor-pointer mt-[2px]' xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                         </svg>
+                    </Link> */}
+                    <Link href='https://in.pinterest.com/Neeehuh/'>
+                        <FaPinterest className='md:text-5xl text-3xl cursor-pointer'/>
                     </Link>
             </span>
         </div>

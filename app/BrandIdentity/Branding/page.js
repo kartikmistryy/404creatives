@@ -46,7 +46,7 @@ const Branding = () => {
               height={1000}
               alt="img"
               className="w-full h-full object-cover"
-              src="/Branding/reloflow/5.png"
+              src="/Branding/reloflow/6.png"
             />
           </Link>
         </div>
